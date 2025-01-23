@@ -14,9 +14,10 @@ b-mi
 
 b-32cfg $XORG_CONFIG
 b-make
-b-32mi
+
+b-make DESTDIR="$BLD/32DEST" install || die "32DEST make install failed"
 
 mkdir -pv "$D"/usr/lib32/pkgconfig
-cp -vr "$BLD"/32DEST/usr/share/pkgconfig/* "$D"/usr/lib32/pkgconfig/
+cp -av "$BLD"/32DEST/usr/share/pkgconfig/* "$D"/usr/lib32/pkgconfig/
 
 }
