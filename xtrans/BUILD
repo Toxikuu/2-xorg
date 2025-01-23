@@ -17,6 +17,6 @@ b-make
 b-32mi
 
 mkdir -pv "$D"/usr/lib32/pkgconfig
-cp -vr 32DEST/usr/share/pkgconfig/* "$D"/usr/lib32/pkgconfig/
+cp -vr "$BLD"/32DEST/usr/share/pkgconfig/* "$D"/usr/lib32/pkgconfig/
 
 }
