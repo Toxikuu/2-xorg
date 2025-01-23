@@ -14,6 +14,9 @@ b-mi
 
 b-32cfg $XORG_CONFIG
 b-make
-DIRS+=(usr/share/pkgconfig) b-32mi
+b-32mi
+
+mkdir -pv "$D"/usr/lib32/pkgconfig
+cp -vr 32DEST/usr/share/pkgconfig/* "$D"/usr/lib32/pkgconfig/
 
 }
