@@ -1,0 +1,8 @@
+name = "xtrans"
+version = "1.5.2"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/releases/individual/lib/xtrans-1.5.2.tar.xz", hash = "" }
+extra = [
+]
