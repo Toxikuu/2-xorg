@@ -12,12 +12,6 @@ b-cfg $XORG_CONFIG
 b-make
 b-mi
 
-b-32cfg $XORG_CONFIG
-b-make
-
-b-make DESTDIR="$BLD/32DEST" install || die "32DEST make install failed"
-
-mkdir -pv "$D"/usr/lib32/pkgconfig
-cp -av "$BLD"/32DEST/usr/share/pkgconfig/* "$D"/usr/lib32/pkgconfig/
-
 }
+
+#d Removed m32 xtrans, following https://github.com/glfs-book/glfs/commit/e2c3a4452b2323fbdfed579afe8ade9fc852c42f
