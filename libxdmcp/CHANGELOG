@@ -3,3 +3,4 @@ Changelog for libxdmcp:
 [ce7aa420eeac6ec161afdeca4ae586a444e4233a] [2025-01-22 00:29:23] | Added libxdmcp=1.1.5
 [ce85330e79446471db26a80efdcbbde6a5955a0d] [2025-01-22 06:32:12] | Revised libxdmcp
 [6d1747563e3c043e68cd9f12c936e3a059fbfe68] [2025-01-23 21:08:25] | Moved main/libxdmcp -> xorg/libxdmcp
+[976234ffafd9abd09507548eb2744466410ae23f] [2025-01-30 03:45:46] | Revised libxdmcp
