@@ -6,5 +6,5 @@ repo = "xorg"
 source = { url = "https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz", hash = "NyIl_UCBW4QjVH9diQxd68cuiLkQiPv7ExWMIElcy1k" }
 extra = [
 ]
-upstream = "https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz"
-version_command = '''git ls-remote --tags --refs 'https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz' | sed 's@.*/@@' | grep xorgproto- | sed 's@_@.@g' | sort -V | tail -n1'''
+upstream = "https://gitlab.freedesktop.org/xorg/proto/xorgproto.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/proto/xorgproto.git' | sed 's@.*/@@' | grep xorgproto- | sed 's@_@.@g' | sort -V | tail -n1'''
