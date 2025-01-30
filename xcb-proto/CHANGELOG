@@ -2,3 +2,4 @@ Changelog for xcb-proto:
 
 [2ac22eeb93d41054b4998e0c47f2372dbcc08f22] [2025-01-22 00:34:10] | Added xcb-proto=1.17.0
 [31aa93967d2a1dedc7a285a079d6491a39544f22] [2025-01-23 02:01:08] | Moved main/xcb-proto -> xorg/xcb-proto
+[0ec1af2f351fdc048e13e7a863b23264e40bbb14] [2025-01-30 04:10:20] | Revised xcb-proto
