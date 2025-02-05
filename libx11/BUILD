@@ -10,6 +10,8 @@ EXTRA=()
 
 2b() {
 
+. e-xorg
+
 b-cfg $XORG_CONFIG --disable-xf86bigfont
 b-make
 b-mi
