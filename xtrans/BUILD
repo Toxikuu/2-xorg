@@ -9,6 +9,8 @@ EXTRA=()
 
 2b() {
 
+. e-xorg
+
 b-cfg $XORG_CONFIG
 b-make
 b-mi
