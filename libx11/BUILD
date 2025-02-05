@@ -16,7 +16,7 @@ b-cfg $XORG_CONFIG --disable-xf86bigfont
 b-make
 b-mi
 
-b-32cfg $XORG_CONFIG --disable-xf86bigfont
+b-32cfg $XORG_CONFIG_32 --disable-xf86bigfont
 b-make
 b-32mi
 
