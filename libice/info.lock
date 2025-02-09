@@ -1,0 +1,10 @@
+name = "libice"
+version = "1.1.2"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libICE-1.1.2.tar.xz", hash = "l05O1BQiXrPHFphd-XCfTajSKmeiiQBmvG38ia0phiU" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libice.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libice.git' | sed 's@.*/@@' | grep -i libice- | sed 's@_@.@g' | sort -V | tail -n1'''
