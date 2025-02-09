@@ -1,0 +1,10 @@
+name = "libxcomposite"
+version = "0.4.6"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXcomposite-0.4.6.tar.xz", hash = "_kC88K4aCQcOuiQIil65gQ7-V0U3eeweIKVQgMbcLIc" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git' | sed 's@.*/@@' | grep -i libxcomposite- | sed 's@_@.@g' | sort -V | tail -n1'''
