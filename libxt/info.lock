@@ -1,0 +1,10 @@
+name = "libxt"
+version = "1.3.1"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXt-1.3.1.tar.xz", hash = "4Kd0szMk9NTAWxmepFBQ-HIGWG2BZV-L7026Q02TEog" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxt.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxt.git' | sed 's@.*/@@' | grep -i libxt- | sed 's@_@.@g' | sort -V | tail -n1'''
