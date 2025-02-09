@@ -2,7 +2,7 @@ NAME="libxss"
 VERS="1.2.4"
 DESC="X11 Screen Saver extension library"
 UPST="https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -i $NAME- | sed 's@_@.@g' | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -i libxscrnsaver- | sed 's@_@.@g' | sort -V | tail -n1"
 DEPS="libxext libx11 glibc xorgproto"
 
 SOURCE="https://www.x.org/pub/individual/lib/libXScrnSaver-$VERS.tar.xz"
