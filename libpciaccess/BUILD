@@ -9,14 +9,17 @@ EXTRA=()
 
 2b() {
 
-. e-xorg
+mkdir -pv build
+cd        build
 
-b-cfg $XORG_CONFIG
-b-make
-b-mi
+CP=.. b-ms
+b-ninja
+b-ni
 
-b-32cfg $XORG_CONFIG_32
-b-make
-b-32mi
+rm -rf ./*
+
+CP=.. b-32ms
+b-ninja
+b-32ni
 
 }
