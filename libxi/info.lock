@@ -1,0 +1,10 @@
+name = "libxi"
+version = "1.8.2"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXi-1.8.2.tar.xz", hash = "0OBVXlPW4hFOq_pEImuhYtJwhQGiXhjZnPs1wJTGwQQ" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxi.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxi.git' | sed 's@.*/@@' | grep -i libxi- | sed 's@_@.@g' | sort -V | tail -n1'''
