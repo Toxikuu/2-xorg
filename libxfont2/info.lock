@@ -1,0 +1,10 @@
+name = "libxfont2"
+version = "2.0.7"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXfont2-2.0.7.tar.xz", hash = "i3uC_eukh2m2lDPo4_u5hKX2vzaLDV9Hq-7EnePljvs" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxfont.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxfont.git' | sed 's@.*/@@' | grep -i libxfont2- | sed 's@_@.@g' | sort -V | tail -n1'''
