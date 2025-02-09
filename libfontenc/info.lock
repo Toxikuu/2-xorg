@@ -1,6 +1,6 @@
 name = "libfontenc"
 version = "1.1.8"
-repo = "main"
+repo = "xorg"
 
 [data]
 source = { url = "https://www.x.org/pub/individual/lib/libfontenc-1.1.8.tar.xz", hash = "ewLD1AUjbg2GgGsd6daGj-YMMTYos4NQsDKRSqT9FMY" }
