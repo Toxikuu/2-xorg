@@ -1,0 +1,10 @@
+name = "libxpresent"
+version = "1.0.1"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXpresent-1.0.1.tar.xz", hash = "uWTfnloGbapeCNLcgmksV8on0AuMwlfo6WDJ8c8mIxs" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxpresent.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxpresent.git' | sed 's@.*/@@' | grep -i libxpresent- | sed 's@_@.@g' | sort -V | tail -n1'''
