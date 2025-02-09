@@ -1,0 +1,10 @@
+name = "libxxf86dga"
+version = "1.1.6"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXxf86dga-1.1.6.tar.xz", hash = "vkRCdXmAj-OiF9WfUcrnVqJpE-tuTIc4zKtl_1bXmA8" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxxf86dga.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxxf86dga.git' | sed 's@.*/@@' | grep -i libxxf86dga- | sed 's@_@.@g' | sort -V | tail -n1'''
