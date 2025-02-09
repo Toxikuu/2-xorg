@@ -1,0 +1,10 @@
+name = "libxaw"
+version = "1.0.16"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXaw-1.0.16.tar.xz", hash = "cx1XK1THCPgeGXpq-oAWkY4uBt_TAl4GbKZCpbjDnI8" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxaw.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxaw.git' | sed 's@.*/@@' | grep -i libxaw- | sed 's@_@.@g' | sort -V | tail -n1'''
