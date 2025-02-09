@@ -1,0 +1,10 @@
+name = "libpciaccess"
+version = "0.18.1"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libpciaccess-0.18.1.tar.xz", hash = "SvQ0RLOK21VF0O0cLORtlgjMR7McI4f8UYFlZ2Wm-nY" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git' | sed 's@.*/@@' | grep -i libpciaccess- | sed 's@_@.@g' | sort -V | tail -n1'''
