@@ -3,7 +3,7 @@ version = "1.3.6"
 repo = "xorg"
 
 [data]
-source = { url = "https://www.x.org/pub/individual/lib/libXext-1.3.6.tar.xz", hash = "" }
+source = { url = "https://www.x.org/pub/individual/lib/libXext-1.3.6.tar.xz", hash = "7bWfojmU5AX9xbQAr99YIK5hYLlPNePcPaRFehbol1M" }
 extra = [
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxext.git"
