@@ -1,0 +1,10 @@
+name = "libxpm"
+version = "3.5.17"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXpm-3.5.17.tar.xz", hash = "ZLMfgQGefTiMgisLKK-NUcRiK4Px8Mtvo_yV4nEibkM" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxpm.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxpm.git' | sed 's@.*/@@' | grep -i libxpm- | sed 's@_@.@g' | sort -V | tail -n1'''
