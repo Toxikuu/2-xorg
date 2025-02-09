@@ -16,8 +16,8 @@ b-cfg $XORG_CONFIG
 b-make
 b-mi
 
-b-32cfg $XORG_CONFIG
+b-32cfg $XORG_CONFIG_32
 b-make
-b-mi
+b-32mi
 
 }
