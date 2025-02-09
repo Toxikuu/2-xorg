@@ -1,0 +1,10 @@
+name = "libsm"
+version = "1.2.5"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libSM-1.2.5.tar.xz", hash = "KvnhLaXvZw3Dp7zhiVycDxv7DLnmTo20D8wz-IO9ILw" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libsm.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libsm.git' | sed 's@.*/@@' | grep -i libsm- | sed 's@_@.@g' | sort -V | tail -n1'''
