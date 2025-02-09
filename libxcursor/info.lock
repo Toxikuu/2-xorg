@@ -1,0 +1,10 @@
+name = "libxcursor"
+version = "1.2.3"
+repo = "xorg"
+
+[data]
+source = { url = "https://www.x.org/pub/individual/lib/libXcursor-1.2.3.tar.xz", hash = "_elALdTP552nHi2Wu5gK_F5v9Pin10wVnhlmr7KywsA" }
+extra = [
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcursor.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcursor.git' | sed 's@.*/@@' | grep -i libxcursor- | sed 's@_@.@g' | sort -V | tail -n1'''
