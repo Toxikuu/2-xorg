@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxau"
 version = "1.0.12"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz", hash = "dNDk36PTmtiTnpm9o39ZZ6ulKCEQdoKEZNJ3fUd_wPs" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxau.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxau.git' | sed 's@.*/@@' | grep -E '^libXau-[0-9]+\.' | cut -d- -f2 | sort -V | tail -n1'''
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz"
+hash = "dNDk36PTmtiTnpm9o39ZZ6ulKCEQdoKEZNJ3fUd_wPs"
