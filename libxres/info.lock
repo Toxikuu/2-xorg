@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxres"
 version = "1.2.2"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libXres-1.2.2.tar.xz", hash = "mnRG80hLm3U4rF7jDSwc6eW3-7rxRA4C9syhhqH6dF8" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxres.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxres.git' | sed 's@.*/@@' | grep -i libxres- | sed 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxres.git' | sed 's@.*/@@' | grep -i libxres- | sed 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libXres-1.2.2.tar.xz"
+hash = "mnRG80hLm3U4rF7jDSwc6eW3-7rxRA4C9syhhqH6dF8"
