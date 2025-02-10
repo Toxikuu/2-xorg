@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxcb"
 version = "1.17.0"
-repo = "xorg"
-
-[data]
-source = { url = "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz", hash = "WZ6_mZZxD-pxYi5uGE86itW0PQ5fqMTkBxI8iKWabVU" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcb.git' | sed 's@.*/@@' | grep 'libxcb-[0-9]' | cut -d- -f2 | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcb.git' | sed 's@.*/@@' | grep 'libxcb-[0-9]' | cut -d- -f2 | sort -V | tail -n1"
+
+[source]
+url = "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz"
+hash = "WZ6_mZZxD-pxYi5uGE86itW0PQ5fqMTkBxI8iKWabVU"
