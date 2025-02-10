@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxshmfence"
 version = "1.3.3"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libxshmfence-1.3.3.tar.xz", hash = "1KTfCWq6lv6gLAKe46ROEaR-t_chPBpym-g-hew_3hA" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxshmfence.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxshmfence.git' | sed 's@.*/@@' | grep -i libxshmfence- | sed 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxshmfence.git' | sed 's@.*/@@' | grep -i libxshmfence- | sed 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libxshmfence-1.3.3.tar.xz"
+hash = "1KTfCWq6lv6gLAKe46ROEaR-t_chPBpym-g-hew_3hA"
