@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxss"
 version = "1.2.4"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libXScrnSaver-1.2.4.tar.xz", hash = "dc0oWfOOIHoJDKyYDXa8cenamdSNCXA1hOAFhavJIP4" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git' | sed 's@.*/@@' | grep -i libxscrnsaver- | sed 's@_@.@g' | sort -V | tail -n1 | cut -d- -f2'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver.git' | sed 's@.*/@@' | grep -i libxscrnsaver- | sed 's@_@.@g' | sort -V | tail -n1 | cut -d- -f2"
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libXScrnSaver-1.2.4.tar.xz"
+hash = "dc0oWfOOIHoJDKyYDXa8cenamdSNCXA1hOAFhavJIP4"
