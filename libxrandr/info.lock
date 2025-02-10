@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxrandr"
 version = "1.5.4"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libXrandr-1.5.4.tar.xz", hash = "GtWwZTdfSoWRWqYGEcxkB8BgSSohTX-dryFL51LDtNM" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxrandr.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxrandr.git' | sed 's@.*/@@' | grep -i libxrandr- | sed 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxrandr.git' | sed 's@.*/@@' | grep -i libxrandr- | sed 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libXrandr-1.5.4.tar.xz"
+hash = "GtWwZTdfSoWRWqYGEcxkB8BgSSohTX-dryFL51LDtNM"
