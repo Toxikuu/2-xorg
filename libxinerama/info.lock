@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxinerama"
 version = "1.1.5"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libXinerama-1.1.5.tar.xz", hash = "UJTR8PzBgoyxaW0NOdnoZq4yUgxU0B9hjxo8HjDCCFw" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxinerama.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxinerama.git' | sed 's@.*/@@' | grep -i libxinerama- | sed 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxinerama.git' | sed 's@.*/@@' | grep -i libxinerama- | sed 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libXinerama-1.1.5.tar.xz"
+hash = "UJTR8PzBgoyxaW0NOdnoZq4yUgxU0B9hjxo8HjDCCFw"
