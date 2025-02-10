@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "xcb-proto"
 version = "1.17.0"
-repo = "xorg"
-
-[data]
-source = { url = "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz", hash = "LBus0hEPR5n3TebrtxS5TPb4D7ESMWsSGUgP0iViFIw" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/proto/xcbproto.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/proto/xcbproto.git' | sed 's@.*/@@' | grep xcb-proto- | sed 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/proto/xcbproto.git' | sed 's@.*/@@' | grep xcb-proto- | sed 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.17.0.tar.xz"
+hash = "LBus0hEPR5n3TebrtxS5TPb4D7ESMWsSGUgP0iViFIw"
