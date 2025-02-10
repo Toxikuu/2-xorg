@@ -1,10 +1,9 @@
+repo = "xorg"
 name = "libxtst"
 version = "1.2.5"
-repo = "xorg"
-
-[data]
-source = { url = "https://www.x.org/pub/individual/lib/libXtst-1.2.5.tar.xz", hash = "tQ1MJblwCadEcGwQOcWY9NjmSRDJ_eOBmU4criNdkkI" }
-extra = [
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxtst.git"
-version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxtst.git' | sed 's@.*/@@' | grep -i libxtst- | sed 's@_@.@g' | sort -V | tail -n1'''
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxtst.git' | sed 's@.*/@@' | grep -i libxtst- | sed 's@_@.@g' | sort -V | tail -n1"
+
+[source]
+url = "https://www.x.org/pub/individual/lib/libXtst-1.2.5.tar.xz"
+hash = "tQ1MJblwCadEcGwQOcWY9NjmSRDJ_eOBmU4criNdkkI"
