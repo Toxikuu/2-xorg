@@ -11,7 +11,7 @@ DEPS=("python")
 
 2b() {
 
-PYTHON=python3 b-cfg $XORG_CONFIG
-b-mi
+PYTHON=python3 cfg ${XORG_CONFIG[@]}
+mi
 
 }
