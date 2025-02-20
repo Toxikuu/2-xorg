@@ -9,9 +9,9 @@ EXTRA=()
 
 2b() {
 
-. e-xorg
+with xorg
 
-b-cfg $XORG_CONFIG
-b-mi
+cfg ${XORG_CONFIG[@]}
+mi
 
 }
