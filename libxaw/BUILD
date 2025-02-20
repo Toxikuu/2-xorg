@@ -16,6 +16,8 @@ cfg ${XORG_CONFIG[@]}
 mk
 mi
 
+m32=1
+
 cfg ${XORG_CONFIG_32[@]}
 mk
 mi
