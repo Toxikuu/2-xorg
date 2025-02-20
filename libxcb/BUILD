@@ -11,14 +11,17 @@ DEPS=("libxau xcb-proto libxdmcp")
 
 2b() {
 
-b-cfg $XORG_CONFIG --without-doxygen
-b-make
-b-mi
+with xorg
 
-b-make distclean
+cfg ${XORG_CONFIG[@]} --without-doxygen
+mk
+mi
 
-b-32cfg $XORG_CONFIG --without-doxygen
-b-make
-b-32mi
+mk distclean
+m32=1
+
+cfg ${XORG_CONFIG_32[@]} --without-doxygen
+mk
+mi
 
 }
