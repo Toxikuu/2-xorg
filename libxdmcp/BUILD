@@ -11,16 +11,17 @@ DEPS=("xorgproto")
 
 2b() {
 
-. e-xorg
+with xorg
 
-b-cfg $XORG_CONFIG
-b-make
-b-mi
+cfg ${XORG_CONFIG[@]}
+mk
+mi
 
-b-make distclean
+mk distclean
+m32=1
 
-b-32cfg $XORG_CONFIG
-b-make
-b-32mi
+cfg ${XORG_CONFIG_32[@]}
+mk
+mi
 
 }
