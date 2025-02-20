@@ -10,14 +10,16 @@ EXTRA=()
 
 2b() {
 
-. e-xorg
+with xorg
 
-b-cfg $XORG_CONFIG
-b-make
-b-mi
+cfg "${XORG_CONFIG[@]}"
+make
+mi
 
-b-32cfg $XORG_CONFIG_32
-b-make
-b-32mi
+m32=1
+
+cfg "${XORG_CONFIG_32[@]}"
+make
+mi
 
 }
