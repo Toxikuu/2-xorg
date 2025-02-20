@@ -11,13 +11,15 @@ DEPS="xorgproto"
 
 2b() {
 
-b-cfg $XORG_CONFIG
-b-make
-b-mi
+cfg ${XORG_CONFIG[@]}
+mk
+mi
 
-b-make distclean
-b-32cfg $XORG_CONFIG
-b-make
-b-32mi
+mk distclean
+m32=1
+
+cfg ${XORG_CONFIG_32[@]}
+mk
+mi
 
 }
