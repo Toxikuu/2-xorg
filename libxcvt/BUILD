@@ -10,17 +10,17 @@ EXTRA=()
 
 2b() {
 
-. e-xorg
-mkdir -pv build
-cd        build
+with xorg meson ninja
 
-CP=.. b-ms
-b-ninja
-b-ni
+ms
+nj
+ni
 
-rm -rf ./*
-CP=.. b-32ms
-b-ninja
-b-32ni
+cd ..
+m32=1
+
+ms
+nj
+ni
 
 }
