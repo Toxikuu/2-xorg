@@ -10,14 +10,14 @@ EXTRA=()
 
 2b() {
 
-. e-xorg
+with xorg
 
-b-cfg $XORG_CONFIG --disable-xf86bigfont
-b-make
-b-mi
+cfg ${XORG_CONFIG[@]} --disable-xf86bigfont
+mk
+mi
 
-b-32cfg $XORG_CONFIG_32 --disable-xf86bigfont
-b-make
-b-32mi
+cfg ${XORG_CONFIG_32[@]} --disable-xf86bigfont
+mk
+mi
 
 }
