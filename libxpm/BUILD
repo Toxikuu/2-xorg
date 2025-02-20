@@ -10,14 +10,16 @@ EXTRA=()
 
 2b() {
 
-. e-xorg
+with xorg
 
-b-cfg $XORG_CONFIG --disable-open-zfile
-b-make
-b-mi
+cfg ${XORG_CONFIG[@]} --disable-open-zfile
+mk
+mi
 
-b-32cfg $XORG_CONFIG_32 --disable-open-zfile
-b-make
-b-32mi
+m32=1
+
+cfg ${XORG_CONFIG_32[@]} --disable-open-zfile
+mk
+mi
 
 }
