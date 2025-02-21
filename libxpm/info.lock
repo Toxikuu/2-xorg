@@ -1,6 +1,15 @@
 repo = "xorg"
 name = "libxpm"
 version = "3.5.17"
+description = "X11 pixmap library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxt",
+    "libxext",
+    "libx11",
+    "glibc",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxpm.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxpm.git' | sed 's@.*/@@' | grep -i libxpm- | sed 's@_@.@g' | sort -V | tail -n1"
 
