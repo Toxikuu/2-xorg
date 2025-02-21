@@ -1,6 +1,16 @@
 repo = "xorg"
 name = "libxi"
 version = "1.8.2"
+description = "X11 Input extension library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxext",
+    "libxfixes",
+    "libx11",
+    "glibc",
+    "xorgproto",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxi.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxi.git' | sed 's@.*/@@' | grep -i libxi- | sed 's@_@.@g' | sort -V | tail -n1"
 
