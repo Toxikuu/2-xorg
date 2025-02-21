@@ -1,6 +1,15 @@
 repo = "xorg"
 name = "libx11"
 version = "1.8.11"
+description = "X11 client-side library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxcb",
+    "glibc",
+    "xorgproto",
+    "util-macros",
+    "xtrans",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libx11.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libx11.git' | sed 's@.*/@@' | grep -i libx11- | sed 's@_@.@g' | sort -V | tail -n1"
 
