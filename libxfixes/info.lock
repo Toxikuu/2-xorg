@@ -1,6 +1,14 @@
 repo = "xorg"
 name = "libxfixes"
 version = "6.0.1"
+description = "X11 miscellaneous 'fixes' extension library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libx11",
+    "xorgproto",
+    "glibc",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxfixes.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxfixes.git' | sed 's@.*/@@' | grep -i libxfixes- | sed 's@_@.@g' | sort -V | tail -n1"
 
