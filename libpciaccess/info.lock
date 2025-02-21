@@ -1,6 +1,8 @@
 repo = "xorg"
 name = "libpciaccess"
 version = "0.18.1"
+description = "X11 PCI access library"
+timestamp = "2025-02-20 20:24:43"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git' | sed 's@.*/@@' | grep -i libpciaccess- | sed 's@_@.@g' | sort -V | tail -n1"
 
