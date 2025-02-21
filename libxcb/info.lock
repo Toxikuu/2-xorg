@@ -1,6 +1,13 @@
 repo = "xorg"
 name = "libxcb"
 version = "1.17.0"
+description = "X11 client-side library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxau",
+    "xcb-proto",
+    "libxdmcp",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcb.git' | sed 's@.*/@@' | grep 'libxcb-[0-9]' | cut -d- -f2 | sort -V | tail -n1"
 
