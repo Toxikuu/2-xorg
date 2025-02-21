@@ -1,6 +1,18 @@
 repo = "xorg"
 name = "libxaw"
 version = "1.0.16"
+description = "X11 Athena Widget library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxmu",
+    "libxpm",
+    "libx11",
+    "libxt",
+    "libxext",
+    "xorgproto",
+    "glibc",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxaw.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxaw.git' | sed 's@.*/@@' | grep -i libxaw- | sed 's@_@.@g' | sort -V | tail -n1"
 
