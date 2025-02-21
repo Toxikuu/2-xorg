@@ -1,6 +1,16 @@
 repo = "xorg"
 name = "libxcursor"
 version = "1.2.3"
+description = "X cursor management library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxfixes",
+    "libxrender",
+    "libx11",
+    "glibc",
+    "xorgproto",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcursor.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcursor.git' | sed 's@.*/@@' | grep -i libxcursor- | sed 's@_@.@g' | sort -V | tail -n1"
 
