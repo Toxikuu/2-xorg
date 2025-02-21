@@ -1,6 +1,16 @@
 repo = "xorg"
 name = "libxrandr"
 version = "1.5.4"
+description = "X11 RandR extension library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxext",
+    "libxrender",
+    "libx11",
+    "glibc",
+    "util-macros",
+    "xorgproto",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxrandr.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxrandr.git' | sed 's@.*/@@' | grep -i libxrandr- | sed 's@_@.@g' | sort -V | tail -n1"
 
