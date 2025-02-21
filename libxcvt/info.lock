@@ -1,6 +1,12 @@
 repo = "xorg"
 name = "libxcvt"
 version = "0.1.3"
+description = "library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "glibc",
+    "meson",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcvt.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcvt.git' | sed 's@.*/@@' | grep -i libxcvt- | sed 's@_@.@g' | sort -V | tail -n1"
 
