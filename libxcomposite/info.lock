@@ -1,6 +1,15 @@
 repo = "xorg"
 name = "libxcomposite"
 version = "0.4.6"
+description = "X11 Composite extension library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "libxfixes",
+    "xorgproto",
+    "libx11",
+    "glibc",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git' | sed 's@.*/@@' | grep -i libxcomposite- | sed 's@_@.@g' | sort -V | tail -n1"
 
