@@ -1,6 +1,8 @@
 repo = "xorg"
 name = "xtrans"
 version = "1.5.2"
+description = "X transport library"
+timestamp = "2025-02-20 20:24:43"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxtrans.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxtrans.git' | sed 's@.*/@@' | grep xtrans- | sed 's@_@.@g' | sort -V | tail -n1"
 
