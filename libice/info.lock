@@ -1,6 +1,14 @@
 repo = "xorg"
 name = "libice"
 version = "1.1.2"
+description = "X11 Inter-Client Exchange library"
+timestamp = "2025-02-20 20:24:43"
+dependencies = [
+    "glibc",
+    "xorgproto",
+    "xtrans",
+    "util-macros",
+]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libice.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libice.git' | sed 's@.*/@@' | grep -i libice- | sed 's@_@.@g' | sort -V | tail -n1"
 
