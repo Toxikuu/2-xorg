@@ -1,6 +1,9 @@
 repo = "xorg"
 name = "libxau"
 version = "1.0.12"
+description = "The X Authorization Protocol"
+timestamp = "2025-02-20 20:24:43"
+dependencies = ["xorgproto"]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxau.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxau.git' | sed 's@.*/@@' | grep -E '^libXau-[0-9]+\.' | cut -d- -f2 | sort -V | tail -n1'''
 
