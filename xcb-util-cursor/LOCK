@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "xcb-util-cursor"
+version = "0.1.5"
+description = "XCB cursor library"
+timestamp = "2025-03-05 03:42:34"
+dependencies = [
+    "libxcb",
+    "xcb-proto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor.git"
+
+[source]
+url = "https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.5.tar.xz"
+hash = "DK-ZsNYJcPgc5Bx7ppTl6q-DMie7LLzbL23JZmpmPFc"
