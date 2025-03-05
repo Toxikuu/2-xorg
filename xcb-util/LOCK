@@ -2,12 +2,13 @@ repo = "xorg"
 name = "xcb-util"
 version = "0.4.1"
 description = "Utility libraries for XC Binding"
-timestamp = "2025-03-05 03:10:16"
+timestamp = "2025-03-05 04:10:12"
 dependencies = [
     "libxcb",
     "xcb-proto",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-util.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcb-util.git' | sed 's@.*/@@' | grep '^xcb-util-.\+[0-9]$' | sort -V'''
 
 [source]
 url = "https://xcb.freedesktop.org/dist/xcb-util-0.4.1.tar.xz"
