@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "xcb-util-renderutil"
+version = "0.3.10"
+description = "Convenience functions for the X Render extension"
+timestamp = "2025-03-05 03:39:10"
+dependencies = [
+    "libxcb",
+    "xcb-proto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-render-util.git"
+
+[source]
+url = "https://xcb.freedesktop.org/dist/xcb-util-renderutil-0.3.10.tar.xz"
+hash = "PhXU8OItjdv7ufXXfbQ-rNejBAKb8lphZsxjyqltBLo"
