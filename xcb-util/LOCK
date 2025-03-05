@@ -1,8 +1,8 @@
-repo = "main"
+repo = "xorg"
 name = "xcb-util"
 version = "0.4.1"
 description = "Utility libraries for XC Binding"
-timestamp = "2025-03-05 03:09:48"
+timestamp = "2025-03-05 03:10:16"
 dependencies = [
     "libxcb",
     "xcb-proto",
