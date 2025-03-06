@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxrandr"
 version = "1.5.4"
 description = "X11 RandR extension library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:19:10"
 dependencies = [
     "libxext",
     "libxrender",
