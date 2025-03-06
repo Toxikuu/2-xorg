@@ -2,7 +2,7 @@ repo = "xorg"
 name = "luit"
 version = "20240910"
 description = "Filter that can be run between an arbitrary application and a UTF-8 terminal emulator"
-timestamp = "2025-03-05 04:05:12"
+timestamp = "2025-03-06 16:01:25"
 dependencies = [
     "libfontenc",
     "libx11",
