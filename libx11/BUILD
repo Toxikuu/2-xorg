@@ -16,6 +16,9 @@ cfg ${XORG_CONFIG[@]} --disable-xf86bigfont
 mk
 mi
 
+m32=1
+mk distclean
+
 cfg ${XORG_CONFIG_32[@]} --disable-xf86bigfont
 mk
 mi
