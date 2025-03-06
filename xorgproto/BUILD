@@ -17,6 +17,4 @@ ms
 nj
 ni
 
-mv -v "$D"/usr/share/doc/xorgproto{,-2024.1}
-
 }
