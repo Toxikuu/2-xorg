@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxcvt"
 version = "0.1.3"
 description = "library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:18:08"
 dependencies = [
     "glibc",
     "meson",
