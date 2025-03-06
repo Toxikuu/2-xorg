@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xcb-util-errors"
 version = "1.0.1"
 description = "XCB errors library"
-timestamp = "2025-03-05 03:44:14"
+timestamp = "2025-03-06 16:00:28"
 dependencies = [
     "libxcb",
     "xcb-proto",
