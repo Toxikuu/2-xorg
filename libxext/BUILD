@@ -18,6 +18,7 @@ mk
 mi
 
 m32=1
+mk distclean
 
 cfg ${XORG_CONFIG_32[@]}
 mk
