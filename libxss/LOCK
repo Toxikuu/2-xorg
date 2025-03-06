@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxss"
 version = "1.2.4"
 description = "X11 Screen Saver extension library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:19:27"
 dependencies = [
     "libxext",
     "libx11",
