@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxinerama"
 version = "1.1.5"
 description = "X11 Xinerama extension library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:18:39"
 dependencies = [
     "libxext",
     "libx11",
