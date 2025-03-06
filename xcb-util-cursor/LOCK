@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xcb-util-cursor"
 version = "0.1.5"
 description = "XCB cursor library"
-timestamp = "2025-03-05 03:42:34"
+timestamp = "2025-03-06 16:00:22"
 dependencies = [
     "libxcb",
     "xcb-proto",
