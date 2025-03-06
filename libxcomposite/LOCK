@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxcomposite"
 version = "0.4.6"
 description = "X11 Composite extension library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:17:55"
 dependencies = [
     "libxfixes",
     "xorgproto",
