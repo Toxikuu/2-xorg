@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxft"
 version = "2.3.8"
 description = "FreeType-based font drawing library for X"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:18:29"
 dependencies = [
     "fontconfig",
     "libxrender",
