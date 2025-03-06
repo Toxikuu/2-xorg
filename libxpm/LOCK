@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxpm"
 version = "3.5.17"
 description = "X11 pixmap library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:19:00"
 dependencies = [
     "libxt",
     "libxext",
