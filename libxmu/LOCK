@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxmu"
 version = "1.2.1"
 description = "X11 miscellaneous micro-utility library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:18:52"
 dependencies = [
     "libxext",
     "libxt",
