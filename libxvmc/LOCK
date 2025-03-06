@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxvmc"
 version = "1.0.14"
 description = "X11 Video Motion Compensation extension library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:19:43"
 dependencies = [
     "libxext",
     "libxv",
