@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxrender"
 version = "0.9.12"
 description = "X Rendering Extension client library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:19:15"
 dependencies = [
     "libx11",
     "glibc",
