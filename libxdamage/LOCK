@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libxdamage"
 version = "1.1.6"
 description = "X11 damaged region extension library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 15:58:22"
 dependencies = [
     "libxfixes",
     "xorgproto",
