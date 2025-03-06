@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libsm"
 version = "1.2.5"
 description = "X11 Session Management library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:00:02"
 dependencies = [
     "libice",
     "util-linux",
