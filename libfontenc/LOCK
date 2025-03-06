@@ -2,7 +2,7 @@ repo = "xorg"
 name = "libfontenc"
 version = "1.1.8"
 description = "X11 font encoding library"
-timestamp = "2025-02-20 20:24:43"
+timestamp = "2025-03-06 16:17:11"
 dependencies = [
     "glibc",
     "xorgproto",
