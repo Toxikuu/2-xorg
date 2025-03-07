@@ -3,6 +3,7 @@ VERS="1.0.7"
 DESC="Display a message or query in a window"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^$NAME-[0-9]\.' | sort -V | tail -n1"
 DEPS=(
     "libx11"
     "libxaw"
@@ -22,3 +23,4 @@ mk
 mi
 
 }
+#d fixed vcmd
