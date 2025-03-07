@@ -3,12 +3,13 @@ name = "xset"
 version = "1.2.5"
 description = "User preference utility for X"
 categories = ["cli"]
-timestamp = "2025-03-06 19:49:01"
+timestamp = "2025-03-06 20:52:19"
 dependencies = [
     "libxmu",
     "util-macros",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xset.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xset.git' | sed 's@.*/@@' | grep '^xset-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xset-1.2.5.tar.xz"
