@@ -1,0 +1,16 @@
+repo = "xorg"
+name = "xpr"
+version = "1.2.0"
+description = "Print an X window dump from xwd"
+timestamp = "2025-03-06 19:10:44"
+dependencies = [
+    "libx11",
+    "libxmu",
+    "bash",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xpr.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xpr-1.2.0.tar.xz"
+hash = "i5QC-DMTCfCp2BQ9TWEpxKdHn_lElhaEm58eKlg1zsM"
