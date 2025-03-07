@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xev"
 version = "1.2.6"
 description = "Print contents of X events"
-timestamp = "2025-03-06 18:56:20"
+timestamp = "2025-03-06 20:50:44"
 dependencies = [
     "libx11",
     "libxrandr",
@@ -10,6 +10,7 @@ dependencies = [
     "xorgproto",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xev.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xev.git' | sed 's@.*/@@' | grep '^xev-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xev-1.2.6.tar.xz"
