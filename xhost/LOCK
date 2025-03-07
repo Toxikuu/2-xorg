@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xhost"
+version = "1.0.10"
+description = "Server access control program for X"
+timestamp = "2025-03-06 18:59:06"
+dependencies = [
+    "libx11",
+    "libxmu",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xhost.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xhost-1.0.10.tar.xz"
+hash = "qK_XAFlHnHEpSLiV5Bw1pKi_zt47otWkuFXIi7tyW-E"
