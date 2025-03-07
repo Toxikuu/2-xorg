@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "xwud"
+version = "1.0.7"
+description = "X Window System image undumping utility"
+timestamp = "2025-03-06 20:06:54"
+dependencies = [
+    "libx11",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xwud.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xwud-1.0.7.tar.xz"
+hash = "5Vy-2rNtel9nGr-OWUiIr8SMqhFtUdQp6lPqMX7Axh4"
