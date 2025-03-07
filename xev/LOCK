@@ -1,0 +1,16 @@
+repo = "xorg"
+name = "xev"
+version = "1.2.6"
+description = "Print contents of X events"
+timestamp = "2025-03-06 18:56:20"
+dependencies = [
+    "libx11",
+    "libxrandr",
+    "util-macros",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xev.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xev-1.2.6.tar.xz"
+hash = "YeHF4AismXOsp83d826d90EOdwg7Aw6wT03HN8UYB9c"
