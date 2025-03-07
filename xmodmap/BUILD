@@ -3,6 +3,7 @@ VERS="1.0.11"
 DESC="Utility for modifying key and button maps"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^$NAME-[0-9]\.' | sort -V | tail -n1"
 DEPS=(
     "libx11"
     "util-macros"
@@ -20,3 +21,4 @@ mk
 mi
 
 }
+#d fixed vcmd
