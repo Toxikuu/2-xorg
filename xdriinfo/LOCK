@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xdriinfo"
+version = "1.0.7"
+description = "Query configuration information of DRI drivers"
+timestamp = "2025-03-06 18:52:46"
+dependencies = [
+    "libx11",
+    "util-macros",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xdriinfo.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xdriinfo-1.0.7.tar.xz"
+hash = "3YOLrp0rGd3XH-bTDtM6vHyF4Z0iPnnTVgDbP6RL9zQ"
