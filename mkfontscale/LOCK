@@ -2,7 +2,7 @@ repo = "xorg"
 name = "mkfontscale"
 version = "1.2.3"
 description = "Create an index of scalable font files for X"
-timestamp = "2025-03-06 18:35:24"
+timestamp = "2025-03-06 18:36:02"
 dependencies = [
     "freetype",
     "zlib",
