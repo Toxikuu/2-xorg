@@ -16,7 +16,7 @@ EXTRA=()
 
 with xorg
 
-cfg $XORG_CONFIG
+cfg ${XORG_CONFIG[@]}
 mk
 mi
 
