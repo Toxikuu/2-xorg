@@ -1,0 +1,17 @@
+repo = "xorg"
+name = "xkbutils"
+version = "1.0.6"
+description = "XKB utility demos"
+timestamp = "2025-03-06 19:05:19"
+dependencies = [
+    "libx11",
+    "libxaw",
+    "libxt",
+    "util-macros",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xkbutils.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xkbutils-1.0.6.tar.xz"
+hash = "MaK77h4JzLoB3pKJe49UC1Rd6BLzGNMd4HvTpade4l4"
