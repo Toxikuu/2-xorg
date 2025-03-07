@@ -16,8 +16,11 @@ EXTRA=()
 
 2b() {
 
+with xorg
+
 cfg $XORG_CONFIG
 mk
 mi
 
 }
+#d initialized xorg env
