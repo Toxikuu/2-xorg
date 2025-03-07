@@ -2,13 +2,14 @@ repo = "xorg"
 name = "xlsclients"
 version = "1.1.5"
 description = "List client applications running on a display"
-timestamp = "2025-03-06 19:07:44"
+timestamp = "2025-03-06 20:46:48"
 dependencies = [
     "libxcb",
     "util-macroso",
     "xorgproto",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xlsclients.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xlsclients.git' | sed 's@.*/@@' | grep '^xlsclients-' | sort -V | tail -n1"
 
 [source]
 url = "https://www.x.org/pub/individual/app/xlsclients-1.1.5.tar.xz"
