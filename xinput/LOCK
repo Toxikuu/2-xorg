@@ -1,0 +1,20 @@
+repo = "xorg"
+name = "xinput"
+version = "1.6.4"
+description = "Small commandline tool to configure devices"
+categories = ["cli"]
+timestamp = "2025-03-06 19:00:14"
+dependencies = [
+    "libx11",
+    "libxi",
+    "libxinerama",
+    "xrandr",
+    "libxfixes",
+    "util-macros",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xinput.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xinput-1.6.4.tar.xz"
+hash = "rQTQDWVohNEzEQ7t3DTpxp5ibr67urBNyVeRwpBwV8g"
