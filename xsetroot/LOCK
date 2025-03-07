@@ -1,0 +1,17 @@
+repo = "xorg"
+name = "xsetroot"
+version = "1.1.3"
+description = "Classic X utility to set your root window background to a given pattern or color"
+timestamp = "2025-03-06 20:03:03"
+dependencies = [
+    "libx11",
+    "libxcursor",
+    "libxmu",
+    "xbitmaps",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xsetroot.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xsetroot-1.1.3.tar.xz"
+hash = "YIG0Wp60Qm4EXSWdHhRLMkF_tjXluWqpBkc2WslmONE"
