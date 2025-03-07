@@ -3,6 +3,7 @@ VERS="1.3.4"
 DESC="Display information utility for X"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^$NAME-' | sort -V | tail -n1"
 DEPS=(
     "libx11"
     "libxcomposite"
@@ -27,3 +28,4 @@ mk
 mi
 
 }
+#d fixed vcmd
