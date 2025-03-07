@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "xprop"
+version = "1.2.8"
+description = "Display X properties"
+timestamp = "2025-03-06 19:11:18"
+dependencies = [
+    "libx11",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xprop.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xprop-1.2.8.tar.xz"
+hash = "1onirbfve0OfZGm1HNqKfa78gyQ4VMKjuPhNDwKdZ-4"
