@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xkbcomp"
+version = "1.4.7"
+description = "X Keyboard description compiler"
+timestamp = "2025-03-06 19:01:01"
+dependencies = [
+    "libx11",
+    "libxkbfile",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xkbcomp.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xkbcomp-1.4.7.tar.xz"
+hash = "CiiBFOX0TjGYcELHmuz_H_rVOoFUuOyXHCSmmoD4H3c"
