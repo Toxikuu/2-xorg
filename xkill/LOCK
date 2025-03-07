@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xkill"
+version = "1.0.6"
+description = "Kill a client by its X resource"
+timestamp = "2025-03-06 19:06:22"
+dependencies = [
+    "libx11",
+    "libxmu",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xkill.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xkill-1.0.6.tar.xz"
+hash = "5aiqeMR1Z3sRUEZG2o2T2swwdEJYB2ospBiiRDiuuQc"
