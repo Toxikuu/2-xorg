@@ -2,14 +2,14 @@ repo = "xorg"
 name = "xkbevd"
 version = "1.1.6"
 description = "XKB event daemon"
-timestamp = "2025-03-06 20:47:42"
+timestamp = "2025-03-06 20:49:15"
 dependencies = [
     "libx11",
     "libxkbfile",
     "util-macros",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xkbevd.git"
-version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbevd.git' | sed 's@.*/@@' | grep '^xkbevd-' | sort -V | tail -n1"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbevd.git' | sed 's@.*/@@' | grep '^xkbevd-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xkbevd-1.1.6.tar.xz"
