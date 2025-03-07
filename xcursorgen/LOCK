@@ -1,0 +1,16 @@
+repo = "xorg"
+name = "xcursorgen"
+version = "1.0.8"
+description = "Create an X cursor file from PNG images"
+timestamp = "2025-03-06 18:46:19"
+dependencies = [
+    "libpng",
+    "libx11",
+    "libxcursor",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xcursorgen.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xcursorgen-1.0.8.tar.xz"
+hash = "MrM84ntOKF5k_zdXMYBrt5iMxib_EJFcZfHcTaZAzJs"
