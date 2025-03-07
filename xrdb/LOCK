@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xrdb"
+version = "1.2.2"
+description = "X server resource database utility"
+timestamp = "2025-03-06 19:48:00"
+dependencies = [
+    "libx11",
+    "libxmu",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xrdb.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xrdb-1.2.2.tar.xz"
+hash = "MfX8qyMbOPJVsAsGbPfqO0lt9xLJ6y0NUMZwtj5QM_Q"
