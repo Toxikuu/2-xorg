@@ -3,6 +3,7 @@ VERS="1.1.4"
 DESC="List interned atoms defined on server"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^$NAME-[0-9]\.' | sort -V | tail -n1"
 DEPS=(
     "libxcb"
     "util-macros"
@@ -21,3 +22,4 @@ mk
 mi
 
 }
+#d fixed vcmd
