@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xkbutils"
 version = "1.0.6"
 description = "XKB utility demos"
-timestamp = "2025-03-06 19:05:19"
+timestamp = "2025-03-06 20:53:18"
 dependencies = [
     "libx11",
     "libxaw",
@@ -11,6 +11,7 @@ dependencies = [
     "xorgproto",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xkbutils.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbutils.git' | sed 's@.*/@@' | grep '^xkbutils-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xkbutils-1.0.6.tar.xz"
