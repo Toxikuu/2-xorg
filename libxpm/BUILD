@@ -12,14 +12,14 @@ EXTRA=()
 
 with xorg
 
-cfg ${XORG_CONFIG[@]} --disable-open-zfile
+cfg $XORG_CONFIG --disable-open-zfile
 mk
 mi
 
 m32=1
 mk distclean
 
-cfg ${XORG_CONFIG_32[@]} --disable-open-zfile
+cfg $XORG_CONFIG_32 --disable-open-zfile
 mk
 mi
 
