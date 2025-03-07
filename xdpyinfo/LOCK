@@ -1,0 +1,21 @@
+repo = "xorg"
+name = "xdpyinfo"
+version = "1.3.4"
+description = "Display information utility for X"
+timestamp = "2025-03-06 18:47:40"
+dependencies = [
+    "libx11",
+    "libxcomposite",
+    "libxext",
+    "libxinerama",
+    "libxrender",
+    "libxtst",
+    "libxxf86vm",
+    "util-macros",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xdpyinfo.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xdpyinfo-1.3.4.tar.xz"
+hash = "qK2lgdvXJmRA18N5T6ie32uZuIV_wujDEEJoTzr0gis"
