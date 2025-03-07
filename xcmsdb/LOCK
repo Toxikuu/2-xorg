@@ -2,12 +2,13 @@ repo = "xorg"
 name = "xcmsdb"
 version = "1.0.7"
 description = "Device Color Characterization utility for X Color Management System"
-timestamp = "2025-03-06 18:42:54"
+timestamp = "2025-03-06 20:50:08"
 dependencies = [
     "libx11",
     "util-macros",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xcmsdb.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xcmsdb.git' | sed 's@.*/@@' | grep '^xcmsdb-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xcmsdb-1.0.7.tar.xz"
