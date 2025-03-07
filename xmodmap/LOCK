@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "xmodmap"
+version = "1.0.11"
+description = "Utility for modifying key and button maps"
+timestamp = "2025-03-06 19:10:11"
+dependencies = [
+    "libx11",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xmodmap.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xmodmap-1.0.11.tar.xz"
+hash = "mi-BaPewvDgoKIR0A5Astr8XXhdlizYYnqyH7dqHfoE"
