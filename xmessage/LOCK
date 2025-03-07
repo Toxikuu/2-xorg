@@ -1,0 +1,16 @@
+repo = "xorg"
+name = "xmessage"
+version = "1.0.7"
+description = "Display a message or query in a window"
+timestamp = "2025-03-06 19:09:24"
+dependencies = [
+    "libx11",
+    "libxaw",
+    "libxt",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xmessage.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xmessage-1.0.7.tar.xz"
+hash = "cD_Mt6C3ctYdfmA8GJuXOYZqqXuphccnJ1Qg-CmjA1Y"
