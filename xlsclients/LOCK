@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xlsclients"
+version = "1.1.5"
+description = "List client applications running on a display"
+timestamp = "2025-03-06 19:07:44"
+dependencies = [
+    "libxcb",
+    "util-macroso",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xlsclients.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xlsclients-1.1.5.tar.xz"
+hash = "aLruV-cCUKxKd1n7eCIYMfl9iLyOUdzC5k6z-MpWuuM"
