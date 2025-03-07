@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xgamma"
+version = "1.0.7"
+description = "Alter a monitor's gamma correction"
+timestamp = "2025-03-06 18:58:23"
+dependencies = [
+    "libx11",
+    "libxxf86vm",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xgamma.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xgamma-1.0.7.tar.xz"
+hash = "HHna6FqJU6FfT-XCiVoDMwe0O4YTRWyH7EezdLETvI8"
