@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "xcmsdb"
+version = "1.0.7"
+description = "Device Color Characterization utility for X Color Management System"
+timestamp = "2025-03-06 18:42:54"
+dependencies = [
+    "libx11",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xcmsdb.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xcmsdb-1.0.7.tar.xz"
+hash = "XsQGjkiBh7BeqS7hNiyWt4qQ8ZzMehhExZIdcGJrvDg"
