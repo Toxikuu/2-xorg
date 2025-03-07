@@ -3,6 +3,7 @@ VERS="1.1.6"
 DESC="XKB event daemon"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^$NAME-' | sort -V | tail -n1"
 DEPS=(
     "libx11"
     "libxkbfile"
@@ -21,3 +22,4 @@ mk
 mi
 
 }
+#d fixed vcmd
