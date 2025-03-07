@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "xrandr"
+version = "1.5.3"
+description = "RandR CLI"
+timestamp = "2025-03-06 19:11:52"
+dependencies = [
+    "libx11",
+    "libxrandr",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xrandr.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xrandr-1.5.3.tar.xz"
+hash = "-N11Zq23QUf6uZZGgLa7re6Hz0Bqf8_1Fxil5pSbhBw"
