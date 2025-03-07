@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xmessage"
 version = "1.0.7"
 description = "Display a message or query in a window"
-timestamp = "2025-03-06 19:09:24"
+timestamp = "2025-03-06 20:50:47"
 dependencies = [
     "libx11",
     "libxaw",
@@ -10,6 +10,7 @@ dependencies = [
     "util-macros",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xmessage.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xmessage.git' | sed 's@.*/@@' | grep '^xmessage-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xmessage-1.0.7.tar.xz"
