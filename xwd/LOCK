@@ -1,0 +1,16 @@
+repo = "xorg"
+name = "xwd"
+version = "1.0.9"
+description = "X Window System image dumping utility"
+timestamp = "2025-03-06 20:05:24"
+dependencies = [
+    "libx11",
+    "libxkbfile",
+    "libxt",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xwd.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xwd-1.0.9.tar.xz"
+hash = "3BIbhJR-tKPRExv_HphEz6ISTZW0ezX5kyNA-pMfvT8"
