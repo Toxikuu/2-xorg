@@ -2,13 +2,14 @@ repo = "xorg"
 name = "xrdb"
 version = "1.2.2"
 description = "X server resource database utility"
-timestamp = "2025-03-06 19:48:00"
+timestamp = "2025-03-06 20:51:49"
 dependencies = [
     "libx11",
     "libxmu",
     "util-macros",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xrdb.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xrdb.git' | sed 's@.*/@@' | grep '^xrdb-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/xrdb-1.2.2.tar.xz"
