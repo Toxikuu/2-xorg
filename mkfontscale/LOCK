@@ -2,7 +2,7 @@ repo = "xorg"
 name = "mkfontscale"
 version = "1.2.3"
 description = "Create an index of scalable font files for X"
-timestamp = "2025-03-06 18:36:02"
+timestamp = "2025-03-06 20:53:28"
 dependencies = [
     "freetype",
     "zlib",
@@ -11,6 +11,7 @@ dependencies = [
     "xorgproto",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/mkfontscale.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/mkfontscale.git' | sed 's@.*/@@' | grep '^mkfontscale-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/mkfontscale-1.2.3.tar.xz"
