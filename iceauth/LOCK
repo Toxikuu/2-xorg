@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "iceauth"
+version = "1.0.10"
+description = "ICE authority file utility"
+timestamp = "2025-03-06 18:08:08"
+dependencies = [
+    "libice",
+    "util-macros",
+    "xorgproto",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/iceauth.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/iceauth-1.0.10.tar.xz"
+hash = "Pe77faJq-dx5m1Yo2SnZHJr2jHhXVjmUTbO5VfKaoCk"
