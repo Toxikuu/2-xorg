@@ -2,7 +2,7 @@ repo = "xorg"
 name = "smproxy"
 version = "1.0.7"
 description = "Provides X11R6 session management support for applications lacking native support"
-timestamp = "2025-03-06 18:41:38"
+timestamp = "2025-03-06 20:50:14"
 dependencies = [
     "libsm",
     "libxmu",
@@ -10,6 +10,7 @@ dependencies = [
     "util-macros",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/app/smproxy.git"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/smproxy.git' | sed 's@.*/@@' | grep '^smproxy-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/app/smproxy-1.0.7.tar.xz"
