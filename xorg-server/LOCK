@@ -3,7 +3,7 @@ name = "xorg-server"
 version = "21.1.16"
 description = "X Window System display server"
 categories = ["graphics"]
-timestamp = "2025-03-07 18:12:27"
+timestamp = "2025-03-08 00:00:42"
 dependencies = [
     "libxcvt",
     "pixman",
@@ -17,6 +17,7 @@ dependencies = [
     "o^nettle",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/xserver.git"
+version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/xserver.git' | sed 's@.*/@@' | grep 'xorg-server-' | sort -V | tail -n1"
 
 [source]
 url = "https://www.x.org/pub/individual/xserver/xorg-server-21.1.16.tar.xz"
