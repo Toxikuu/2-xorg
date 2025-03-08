@@ -1,0 +1,14 @@
+repo = "xorg"
+name = "libevdev"
+version = "1.13.3"
+description = "Common functions for X input drivers"
+categories = [
+    "drivers",
+    "input",
+]
+timestamp = "2025-03-07 18:25:17"
+upstream = "https://gitlab.freedesktop.org/libevdev/libevdev.git"
+
+[source]
+url = "https://www.freedesktop.org/software/libevdev/libevdev-1.13.3.tar.xz"
+hash = "q_GqzoYgjuvdXTVQ_97UyNc7tAW3ltUcOJydBgTLz78"
