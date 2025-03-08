@@ -3,6 +3,7 @@ VERS="1.4.3"
 DESC="X initialization program"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/xinit.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '$NAME-[0-9]\.' | sort -V | tail -n1"
 DEPS=(
     "libx11"
     "bash"
