@@ -3,6 +3,7 @@ VERS="21.1.16"
 DESC="X Window System display server"
 CATG="graphics"
 UPST="https://gitlab.freedesktop.org/xorg/xserver.git"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '$NAME-' | sort -V | tail -n1"
 DEPS=(
     "libxcvt"
     "pixman"
