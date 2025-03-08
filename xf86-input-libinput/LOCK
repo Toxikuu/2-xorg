@@ -1,0 +1,18 @@
+repo = "xorg"
+name = "xf86-input-libinput"
+version = "1.5.0"
+description = "Libinput-based generic X input driver"
+categories = [
+    "drivers",
+    "input",
+]
+timestamp = "2025-03-07 18:33:48"
+dependencies = [
+    "libinput",
+    "xorg-server",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/driver/xf86-input-libinput.git"
+
+[source]
+url = "https://www.x.org/pub/individual/driver/xf86-input-libinput-1.5.0.tar.xz"
+hash = "JSTDXxllVOoRrvO7oc8yR1lFTh1J-YrAJqzi9gA1gOY"
