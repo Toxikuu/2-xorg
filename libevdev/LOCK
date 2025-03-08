@@ -6,8 +6,9 @@ categories = [
     "drivers",
     "input",
 ]
-timestamp = "2025-03-07 18:25:17"
+timestamp = "2025-03-08 00:05:13"
 upstream = "https://gitlab.freedesktop.org/libevdev/libevdev.git"
+version_command = '''git ls-remote --tags --refs https://gitlab.freedesktop.org/libevdev/libevdev.git | sed 's@.*/@@' | grep libevdev-[0-9]\. | sort -V | tail -n1'''
 
 [source]
 url = "https://www.freedesktop.org/software/libevdev/libevdev-1.13.3.tar.xz"
