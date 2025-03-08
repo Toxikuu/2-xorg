@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "libinput"
+version = "1.27.1"
+description = "Input device management and event handling library"
+categories = ["input"]
+timestamp = "2025-03-07 18:31:49"
+dependencies = [
+    "libevdev",
+    "mtdev",
+]
+upstream = "https://gitlab.freedesktop.org/libinput/libinput.git"
+
+[source]
+url = "https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.27.1/libinput-1.27.1.tar.gz"
+hash = "9tYj3YIw2zN6ZFdkXrypa51HiKVjhUY7sUuBdJEN_iM"
