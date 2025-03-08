@@ -1,0 +1,18 @@
+repo = "xorg"
+name = "xf86-input-synaptics"
+version = "1.10.0"
+description = "Synaptics driver for notebook touchpads"
+categories = [
+    "drivers",
+    "input",
+]
+timestamp = "2025-03-07 18:37:13"
+dependencies = [
+    "libevdev",
+    "xorg-server",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/driver/xf86-input-synaptics.git"
+
+[source]
+url = "https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.10.0.tar.xz"
+hash = "4MJq2waO3Qhp-HqH9ekSeSLWHAJl12kqJHqRpcwbtcI"
