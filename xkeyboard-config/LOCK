@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xkeyboard-config"
 version = "2.44"
 description = "X keyboard configuration database"
-timestamp = "2025-03-07 17:56:44"
+timestamp = "2025-03-07 18:11:14"
 dependencies = [
     "meson",
     "python",
