@@ -1,0 +1,18 @@
+repo = "xorg"
+name = "xinit"
+version = "1.4.3"
+description = "X initialization program"
+timestamp = "2025-03-07 18:48:15"
+dependencies = [
+    "libx11",
+    "bash",
+    "xauth",
+    "xmodmap",
+    "xrdb",
+    "util-macros",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/app/xinit.git"
+
+[source]
+url = "https://www.x.org/pub/individual/app/xinit-1.4.3.tar.xz"
+hash = "hkCfIaajEUjSwcF79fLZBOte9FX53GfEn70MEKsY_Vo"
