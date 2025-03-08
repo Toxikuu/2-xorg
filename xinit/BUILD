@@ -32,4 +32,7 @@ msg 'To do this, execute the following commands as root:'
 msg ' $ chmod -v 4755 /usr/bin/Xorg'
 msg ' $ sed -i '\''/$serverargs $vtarg/ s/serverargs/: #&/'\'' /usr/bin/startx'
 
+echo
+msg 'You may also want configure ~/.xinitrc for your non-root user(s) at this point'
+
 }
