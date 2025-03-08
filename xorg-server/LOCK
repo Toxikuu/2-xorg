@@ -3,7 +3,7 @@ name = "xorg-server"
 version = "21.1.16"
 description = "X Window System display server"
 categories = ["graphics"]
-timestamp = "2025-03-07 18:10:15"
+timestamp = "2025-03-07 18:10:45"
 dependencies = [
     "libxcvt",
     "pixman",
