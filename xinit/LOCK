@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xinit"
 version = "1.4.3"
 description = "X initialization program"
-timestamp = "2025-03-07 18:48:15"
+timestamp = "2025-03-07 18:55:02"
 dependencies = [
     "libx11",
     "bash",
