@@ -1,0 +1,28 @@
+repo = "xorg"
+name = "xwayland"
+version = "24.1.6"
+description = "Run X clients under wayland"
+timestamp = "2025-03-07 18:20:03"
+dependencies = [
+    "libxcvt",
+    "pixman",
+    "wayland-protocols",
+    "font-util",
+    "libepoxy",
+    "mesa",
+    "libxau",
+    "libxfont2",
+    "libxshmfence",
+    "pixman",
+    "wayland",
+    "xorg-server",
+    "libxkbfile",
+    "dbus",
+    "xorgproto",
+    "xtrans",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/xserver.git"
+
+[source]
+url = "https://www.x.org/pub/individual/xserver/xwayland-24.1.6.tar.xz"
+hash = "c35hLKNrvfQVqRFkTrdZLPk4mEaEe0f6RtxwW9dU0tc"
