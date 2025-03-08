@@ -35,7 +35,7 @@ ms "${_cfg_opts[@]}"
 nj
 ni
 
-mkdir -pv "$D"/etc/X11/xorg.conf.d
+mkdir -pv "$D"/etc/{X11/xorg.conf.d,sysconfig}
 cat >> "$D"/etc/sysconfig/createfiles << "EOF"
 /tmp/.ICE-unix dir 1777 root root
 /tmp/.X11-unix dir 1777 root root
