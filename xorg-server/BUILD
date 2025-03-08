@@ -22,6 +22,8 @@ EXTRA=()
 
 2b() {
 
+with meson ninja
+
 _cfg_opts=(
     --localstatedir=/var
     -D glamor=true
