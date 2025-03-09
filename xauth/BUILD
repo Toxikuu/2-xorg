@@ -1,5 +1,5 @@
 NAME="xauth"
-VERS="1.1.3"
+VERS="1.1.4"
 DESC="X authorization settings program"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
@@ -24,4 +24,3 @@ mk
 mi
 
 }
-#d fixed vcmd
