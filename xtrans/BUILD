@@ -1,5 +1,5 @@
 NAME="xtrans"
-VERS="1.5.2"
+VERS="1.6.0"
 DESC="X transport library"
 UPST="https://gitlab.freedesktop.org/xorg/lib/libxtrans.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep $NAME- | sed 's@_@.@g' | sort -V | tail -n1"
