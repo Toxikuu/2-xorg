@@ -1,8 +1,8 @@
 repo = "xorg"
 name = "libx11"
-version = "1.8.11"
+version = "1.8.12"
 description = "X11 client-side library"
-timestamp = "2025-03-06 15:54:55"
+timestamp = "2025-03-09 14:02:06"
 dependencies = [
     "libxcb",
     "glibc",
@@ -14,5 +14,5 @@ upstream = "https://gitlab.freedesktop.org/xorg/lib/libx11.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libx11.git' | sed 's@.*/@@' | grep -i libx11- | sed 's@_@.@g' | sort -V | tail -n1"
 
 [source]
-url = "https://www.x.org/pub/individual/lib/libX11-1.8.11.tar.xz"
-hash = "O3ToKUOSS0Wgt3jMaEKXaQnDAQ2URaj9GF4dyk04Dog"
+url = "https://www.x.org/pub/individual/lib/libX11-1.8.12.tar.xz"
+hash = "-gJvm7AST01sgI-a70BXqtZeezXY_0OVHO8Kvga7mpo"
