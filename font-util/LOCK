@@ -1,0 +1,15 @@
+repo = "xorg"
+name = "font-util"
+version = "1.4.1"
+description = "X font utilities"
+categories = ["font"]
+timestamp = "2025-03-09 18:22:21"
+dependencies = [
+    "util-macros",
+    "glibc",
+]
+upstream = "https://gitlab.freedesktop.org/xorg/font/util.git"
+
+[source]
+url = "https://www.x.org/pub/individual/font/font-util-1.4.1.tar.xz"
+hash = "XJ9kEjwZSxUP7okEmZFoc4bm_zbvKve4C6U--vNozJU"
