@@ -1,5 +1,5 @@
 NAME="libsm"
-VERS="1.2.5"
+VERS="1.2.6"
 DESC="X11 Session Management library"
 UPST="https://gitlab.freedesktop.org/xorg/lib/libsm.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -i $NAME- | sed 's@_@.@g' | sort -V | tail -n1"
