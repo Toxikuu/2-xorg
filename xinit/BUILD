@@ -1,5 +1,5 @@
 NAME="xinit"
-VERS="1.4.3"
+VERS="1.4.4"
 DESC="X initialization program"
 CATG=""
 UPST="https://gitlab.freedesktop.org/xorg/app/xinit.git"
