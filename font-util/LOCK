@@ -3,13 +3,13 @@ name = "font-util"
 version = "1.4.1"
 description = "X font utilities"
 categories = ["font"]
-timestamp = "2025-03-10 18:24:53"
+timestamp = "2025-03-10 18:25:09"
 dependencies = [
     "util-macros",
     "glibc",
 ]
 upstream = "https://gitlab.freedesktop.org/xorg/font/util.git"
-version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/font/util.git' | sed 's@.*/@@' | grep 'font-util-[0-9]\\.'"
+version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/font/util.git' | sed 's@.*/@@' | grep 'font-util-[0-9]\.' | tail -n1'''
 
 [source]
 url = "https://www.x.org/pub/individual/font/font-util-1.4.1.tar.xz"
