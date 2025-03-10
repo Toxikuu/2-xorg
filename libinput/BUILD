@@ -15,7 +15,7 @@ EXTRA=()
 
 with meson ninja
 
-ms -D debug-qui=false \
+ms -D debug-gui=false \
    -D tests=false     \
    -D libwacom=false  \
    -D udev-dir=/usr/lib/udev
@@ -23,3 +23,4 @@ nj
 ni
 
 }
+#d typo
