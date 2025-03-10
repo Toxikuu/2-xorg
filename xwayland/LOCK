@@ -2,7 +2,7 @@ repo = "xorg"
 name = "xwayland"
 version = "24.1.6"
 description = "Run X clients under wayland"
-timestamp = "2025-03-09 19:41:14"
+timestamp = "2025-03-09 19:48:05"
 dependencies = [
     "libxcvt",
     "pixman",
