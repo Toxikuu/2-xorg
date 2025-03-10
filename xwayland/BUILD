@@ -36,7 +36,7 @@ ms -D xkb_output_dir=/var/lib/xkb -D secure-rpc=false
 nj
 ni
 
-mkdir -pv "$D/src/sysconfig"
+mkdir -pv "$D/etc/sysconfig"
 cat >> "$D"/etc/sysconfig/createfiles << "EOF"
 /tmp/.X11-unix dir 1777 root root
 EOF
@@ -44,3 +44,4 @@ EOF
 # Note: Xvfb is not installed in this build
 
 }
+#d typo
