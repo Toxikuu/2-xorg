@@ -3,7 +3,7 @@ VERS="1.4.1"
 DESC="X font utilities"
 CATG="font"
 UPST="https://gitlab.freedesktop.org/xorg/font/util.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '$NAME-[0-9]\\.'"
+VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '$NAME-[0-9]\\.' | tail -n1"
 DEPS=(
     "util-macros"
     "glibc"
