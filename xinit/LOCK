@@ -1,8 +1,8 @@
 repo = "xorg"
 name = "xinit"
-version = "1.4.3"
+version = "1.4.4"
 description = "X initialization program"
-timestamp = "2025-03-08 00:03:32"
+timestamp = "2025-03-10 18:22:25"
 dependencies = [
     "libx11",
     "bash",
@@ -15,5 +15,5 @@ upstream = "https://gitlab.freedesktop.org/xorg/app/xinit.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xinit.git' | sed 's@.*/@@' | grep 'xinit-[0-9]\.' | sort -V | tail -n1'''
 
 [source]
-url = "https://www.x.org/pub/individual/app/xinit-1.4.3.tar.xz"
-hash = "hkCfIaajEUjSwcF79fLZBOte9FX53GfEn70MEKsY_Vo"
+url = "https://www.x.org/pub/individual/app/xinit-1.4.4.tar.xz"
+hash = "QKR8ehZMf5gc43h7Szf35BH7QyMdzeVD1wCUB12s_vk"
