@@ -1,0 +1,17 @@
+repo = "xorg"
+name = "libxkbcommon"
+version = "1.8.1"
+description = "Keymap compiler and support library"
+categories = ["lib"]
+timestamp = "2025-03-16 13:54:29"
+dependencies = [
+    "xkeyboard-config",
+    "libxcb",
+    "wayland",
+    "wayland-protocols",
+]
+upstream = "https://github.com/lfs-book/libxkbcommon.git"
+
+[source]
+url = "https://github.com/lfs-book/libxkbcommon/archive/v1.8.1/libxkbcommon-1.8.1.tar.gz"
+hash = "jSDDSa8r5hx6mCwtPVZ-dM_-q63EeVhNikp_hsAyv0g"
