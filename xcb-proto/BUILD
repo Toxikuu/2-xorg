@@ -11,6 +11,8 @@ DEPS=("python")
 
 2b() {
 
+with xorg
+
 PYTHON=python3 cfg ${XORG_CONFIG[@]}
 mi
 
