@@ -11,6 +11,8 @@ DEPS="xorgproto"
 
 2b() {
 
+with xorg
+
 cfg ${XORG_CONFIG[@]}
 mk
 mi
