@@ -3,7 +3,7 @@ VERS="1.8.1"
 DESC="Keymap compiler and support library"
 CATG="lib"
 UPST="https://github.com/lfs-book/$NAME.git"
-VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep -i xkbcommon- | sed 's@_@.@g' | sort -V | tail -n1"
+VCMD="git ls-remote --tags --refs '$UPST' | sed -e 's@.*/@@' -e 's@_@.@g' | grep -i xkbcommon- | sort -V | tail -n1 | cut -d- -f2"
 DEPS=(
     "xkeyboard-config"
     "libxcb"
