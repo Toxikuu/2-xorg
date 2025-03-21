@@ -10,6 +10,7 @@ EXTRA=()
 
 2b() {
 
+# 2qa skip
 with xorg meson ninja
 
 ms
