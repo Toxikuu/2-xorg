@@ -3,7 +3,7 @@ name = "libxkbcommon"
 version = "1.8.1"
 description = "Keymap compiler and support library"
 categories = ["lib"]
-timestamp = "2025-03-20 16:47:26"
+timestamp = "2025-03-21 16:58:54"
 dependencies = [
     "xkeyboard-config",
     "libxcb",
@@ -11,7 +11,7 @@ dependencies = [
     "wayland-protocols",
 ]
 upstream = "https://github.com/lfs-book/libxkbcommon.git"
-version_command = "git ls-remote --tags --refs 'https://github.com/lfs-book/libxkbcommon.git' | sed 's@.*/@@' | grep -i xkbcommon- | sed 's@_@.@g' | sort -V | tail -n1"
+version_command = "git ls-remote --tags --refs 'https://github.com/lfs-book/libxkbcommon.git' | sed -e 's@.*/@@' -e 's@_@.@g' | grep -i xkbcommon- | sort -V | tail -n1 | cut -d- -f2"
 
 [source]
 url = "https://github.com/lfs-book/libxkbcommon/archive/v1.8.1/libxkbcommon-1.8.1.tar.gz"
