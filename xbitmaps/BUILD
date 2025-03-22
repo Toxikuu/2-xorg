@@ -13,6 +13,8 @@ EXTRA=()
 
 2b() {
 
+with xorg
+
 cfg ${XORG_CONFIG[@]}
 mi
 
