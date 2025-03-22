@@ -45,7 +45,7 @@ EOF
 }
 
 2z() {
-    install -vdm1777 /tmp/.{ICE,X11}-unix &&
+    install -vdm1777 /tmp/.{ICE,X11}-unix
     msg 'You may want to add your non-root user(s) to the input and video groups:'
     msg ' $ usermod -aG input,video <username>'
 }
