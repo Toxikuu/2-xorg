@@ -1,0 +1,4 @@
+libevdev
+xf86-input-evdev
+libinput
+xf86-input-libinput
