@@ -1,5 +1,5 @@
 NAME="libinput"
-VERS="1.27.1"
+VERS="1.28.0"
 DESC="Input device management and event handling library"
 CATG="input"
 UPST="https://gitlab.freedesktop.org/libinput/libinput.git"
@@ -23,4 +23,3 @@ nj
 ni
 
 }
-#d typo
