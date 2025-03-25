@@ -1,5 +1,5 @@
 NAME="libevdev"
-VERS="1.13.3"
+VERS="1.13.4"
 DESC="Common functions for X input drivers"
 CATG="drivers input"
 UPST="https://gitlab.freedesktop.org/libevdev/libevdev.git"
