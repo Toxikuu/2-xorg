@@ -1,15 +1,21 @@
 repo = "xorg"
 name = "xmodmap"
 version = "1.0.11"
+timestamp = "2025-04-16 17:20:58"
 description = "Utility for modifying key and button maps"
-timestamp = "2025-03-06 20:53:21"
-dependencies = [
-    "libx11",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xmodmap.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xmodmap.git' | sed 's@.*/@@' | grep '^xmodmap-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xmodmap-1.0.11.tar.xz"
-hash = "mi-BaPewvDgoKIR0A5Astr8XXhdlizYYnqyH7dqHfoE"
