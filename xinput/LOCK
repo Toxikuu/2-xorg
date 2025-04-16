@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xinput"
 version = "1.6.4"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:25"
 categories = ["cli"]
 description = "Small commandline tool to configure devices"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xinput.git"
