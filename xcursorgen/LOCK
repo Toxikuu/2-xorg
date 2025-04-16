@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "xcursorgen"
 version = "1.0.8"
+timestamp = "2025-04-16 17:21:28"
 description = "Create an X cursor file from PNG images"
-timestamp = "2025-03-06 20:52:17"
-dependencies = [
-    "libpng",
-    "libx11",
-    "libxcursor",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xcursorgen.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xcursorgen.git' | sed 's@.*/@@' | grep '^xcursorgen-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "main/libpng"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxcursor"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xcursorgen-1.0.8.tar.xz"
-hash = "MrM84ntOKF5k_zdXMYBrt5iMxib_EJFcZfHcTaZAzJs"
