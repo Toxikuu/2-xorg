@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xkbutils"
 version = "1.0.6"
-timestamp = "2025-04-16 17:21:27"
+timestamp = "2025-04-16 17:23:24"
 description = "XKB utility demos"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xkbutils.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbutils.git' | sed 's@.*/@@' | grep '^xkbutils-[0-9]\.' | sort -V | tail -n1'''
