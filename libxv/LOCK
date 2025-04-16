@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "libxv"
 version = "1.0.13"
+timestamp = "2025-04-16 17:20:58"
 description = "X11 Video extension library"
-timestamp = "2025-03-06 23:00:17"
-dependencies = [
-    "libxext",
-    "libx11",
-    "glibc",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxv.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxv.git' | sed 's@.*/@@' | grep -i libxv- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXv-1.0.13.tar.xz"
-hash = "fTSRCVjhwfjRk9go_qG32hkilygKNUN68GkvADugN1U"
