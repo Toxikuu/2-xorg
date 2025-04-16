@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "libxv"
 version = "1.0.13"
-timestamp = "2025-04-16 17:20:58"
+timestamp = "2025-04-16 17:21:27"
 description = "X11 Video extension library"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxv.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxv.git' | sed 's@.*/@@' | grep -i libxv- | sed 's@_@.@g' | sort -V | tail -n1"
