@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xgamma"
 version = "1.0.7"
-timestamp = "2025-04-16 17:23:04"
+timestamp = "2025-04-16 17:23:25"
 description = "Alter a monitor's gamma correction"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xgamma.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xgamma.git' | sed 's@.*/@@' | grep '^xgamma-[0-9]\.' | sort -V | tail -n1'''
