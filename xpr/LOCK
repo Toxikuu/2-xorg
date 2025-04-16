@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xpr"
 version = "1.2.0"
-timestamp = "2025-04-16 17:20:34"
+timestamp = "2025-04-16 17:20:58"
 description = "Print an X window dump from xwd"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xpr.git"
 
