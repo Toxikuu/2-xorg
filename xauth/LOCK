@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "xauth"
 version = "1.1.4"
+timestamp = "2025-04-16 17:21:28"
 description = "X authorization settings program"
-timestamp = "2025-03-09 14:00:36"
-dependencies = [
-    "libx11",
-    "libxau",
-    "libxext",
-    "libxmu",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xauth.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xauth.git' | sed 's@.*/@@' | grep '^xauth-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxau"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxmu"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xauth-1.1.4.tar.xz"
-hash = "6TGBQUZK17TcD4VkpYDw0g-XfIWjiMxA1admIGFRxpA"
