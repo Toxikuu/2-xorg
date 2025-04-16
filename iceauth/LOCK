@@ -1,16 +1,26 @@
 repo = "xorg"
 name = "iceauth"
 version = "1.0.10"
+timestamp = "2025-04-16 17:23:25"
 description = "ICE authority file utility"
-timestamp = "2025-03-06 20:46:14"
-dependencies = [
-    "libice",
-    "util-macros",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/iceauth.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/iceauth.git' | sed 's@.*/@@' | grep '^iceauth-' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libice"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/iceauth-1.0.10.tar.xz"
-hash = "Pe77faJq-dx5m1Yo2SnZHJr2jHhXVjmUTbO5VfKaoCk"
