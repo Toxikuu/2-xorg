@@ -6,7 +6,7 @@ UPST="https://gitlab.freedesktop.org/xorg/app/$NAME.git"
 VCMD="git ls-remote --tags --refs '$UPST' | sed 's@.*/@@' | grep '^$NAME-' | sort -V | tail -n1"
 DEPS=(
     "libxcb"
-    "util-macroso"
+    "util-macros"
     "xorgproto"
 )
 
@@ -22,4 +22,3 @@ mk
 mi
 
 }
-#d fixed vcmd
