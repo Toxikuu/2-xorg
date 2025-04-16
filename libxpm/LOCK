@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "libxpm"
 version = "3.5.17"
+timestamp = "2025-04-16 17:23:25"
 description = "X11 pixmap library"
-timestamp = "2025-03-06 23:00:40"
-dependencies = [
-    "libxt",
-    "libxext",
-    "libx11",
-    "glibc",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxpm.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxpm.git' | sed 's@.*/@@' | grep -i libxpm- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXpm-3.5.17.tar.xz"
-hash = "ZLMfgQGefTiMgisLKK-NUcRiK4Px8Mtvo_yV4nEibkM"
