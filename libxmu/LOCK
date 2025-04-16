@@ -1,19 +1,41 @@
 repo = "xorg"
 name = "libxmu"
 version = "1.2.1"
+timestamp = "2025-04-16 17:20:58"
 description = "X11 miscellaneous micro-utility library"
-timestamp = "2025-03-06 16:18:52"
-dependencies = [
-    "libxext",
-    "libxt",
-    "libx11",
-    "xorgproto",
-    "glibc",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxmu.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxmu.git' | sed 's@.*/@@' | grep -i libxmu- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXmu-1.2.1.tar.xz"
-hash = "_LJ3kySKOeX8xbnErsQMwHNLPKdqrD19HCZOf34U6LI"
