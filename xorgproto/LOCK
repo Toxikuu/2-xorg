@@ -1,12 +1,16 @@
 repo = "xorg"
 name = "xorgproto"
 version = "2024.1"
+timestamp = "2025-04-16 17:23:25"
 description = "Xorg protocol headers"
-timestamp = "2025-03-06 16:01:08"
-dependencies = ["util-macros"]
 upstream = "https://gitlab.freedesktop.org/xorg/proto/xorgproto.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/proto/xorgproto.git' | sed 's@.*/@@' | grep xorgproto- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2024.1.tar.xz"
-hash = "NyIl_UCBW4QjVH9diQxd68cuiLkQiPv7ExWMIElcy1k"
