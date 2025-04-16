@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xcursorgen"
 version = "1.0.8"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:24"
 description = "Create an X cursor file from PNG images"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xcursorgen.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xcursorgen.git' | sed 's@.*/@@' | grep '^xcursorgen-[0-9]\.' | sort -V | tail -n1'''
