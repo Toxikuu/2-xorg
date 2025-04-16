@@ -1,17 +1,27 @@
 repo = "xorg"
 name = "xwininfo"
 version = "1.1.6"
-description = "Displays X window information"
+timestamp = "2025-04-16 17:23:08"
 categories = ["cli"]
-timestamp = "2025-03-06 20:52:38"
-dependencies = [
-    "libxcb",
-    "libx11",
-    "util-macros",
-]
+description = "Displays X window information"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xwininfo.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xwininfo.git' | sed 's@.*/@@' | grep '^xwininfo-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xwininfo-1.1.6.tar.xz"
-hash = "NRiJfBdEjfm6ma1tm7HKDxe8DtfA_WEoGzTO7SmpJT8"
