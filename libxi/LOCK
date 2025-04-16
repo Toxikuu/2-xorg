@@ -1,19 +1,41 @@
 repo = "xorg"
 name = "libxi"
 version = "1.8.2"
+timestamp = "2025-04-16 17:23:26"
 description = "X11 Input extension library"
-timestamp = "2025-03-06 16:18:35"
-dependencies = [
-    "libxext",
-    "libxfixes",
-    "libx11",
-    "glibc",
-    "xorgproto",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxi.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxi.git' | sed 's@.*/@@' | grep -i libxi- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxfixes"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXi-1.8.2.tar.xz"
-hash = "0OBVXlPW4hFOq_pEImuhYtJwhQGiXhjZnPs1wJTGwQQ"
