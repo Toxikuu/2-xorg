@@ -1,16 +1,26 @@
 repo = "xorg"
 name = "xlsatoms"
 version = "1.1.4"
+timestamp = "2025-04-16 17:20:58"
 description = "List interned atoms defined on server"
-timestamp = "2025-03-06 20:53:24"
-dependencies = [
-    "libxcb",
-    "util-macros",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xlsatoms.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xlsatoms.git' | sed 's@.*/@@' | grep '^xlsatoms-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xlsatoms-1.1.4.tar.xz"
-hash = "9L-hX1bAZtMmpdWykmRnCPJbkkdQaEC5BHzSaH3Mcbc"
