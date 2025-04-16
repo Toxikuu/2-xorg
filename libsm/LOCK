@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "libsm"
 version = "1.2.6"
+timestamp = "2025-04-16 17:21:28"
 description = "X11 Session Management library"
-timestamp = "2025-03-09 14:00:26"
-dependencies = [
-    "libice",
-    "util-linux",
-    "xorgproto",
-    "glibc",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libsm.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libsm.git' | sed 's@.*/@@' | grep -i libsm- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libice"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/util-linux"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libSM-1.2.6.tar.xz"
-hash = "vnwKvbFcv9KaxiVzwcguh3-dQEetFTIefql9HkPYNb4"
