@@ -1,15 +1,15 @@
 repo = "xorg"
 name = "libevdev"
 version = "1.13.4"
-description = "Common functions for X input drivers"
+timestamp = "2025-04-16 17:21:28"
 categories = [
     "drivers",
     "input",
 ]
-timestamp = "2025-03-25 15:27:02"
+description = "Common functions for X input drivers"
 upstream = "https://gitlab.freedesktop.org/libevdev/libevdev.git"
 version_command = '''git ls-remote --tags --refs https://gitlab.freedesktop.org/libevdev/libevdev.git | sed 's@.*/@@' | grep libevdev-[0-9]\. | sort -V | tail -n1'''
 
 [source]
+kind = "Tarball"
 url = "https://www.freedesktop.org/software/libevdev/libevdev-1.13.4.tar.xz"
-hash = "8Aq41CrYuQUpb6tn4TuHHxpCSDkzFRZkIQD4KtiBJ80"
