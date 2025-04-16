@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "xkbutils"
 version = "1.0.6"
+timestamp = "2025-04-16 17:20:58"
 description = "XKB utility demos"
-timestamp = "2025-03-06 20:53:18"
-dependencies = [
-    "libx11",
-    "libxaw",
-    "libxt",
-    "util-macros",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xkbutils.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbutils.git' | sed 's@.*/@@' | grep '^xkbutils-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxaw"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xkbutils-1.0.6.tar.xz"
-hash = "MaK77h4JzLoB3pKJe49UC1Rd6BLzGNMd4HvTpade4l4"
