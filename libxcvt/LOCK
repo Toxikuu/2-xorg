@@ -1,15 +1,21 @@
 repo = "xorg"
 name = "libxcvt"
 version = "0.1.3"
+timestamp = "2025-04-16 17:23:25"
 description = "library providing a standalone version of the X server implementation of the VESA CVT standard timing modelines generator"
-timestamp = "2025-03-21 18:52:34"
-dependencies = [
-    "glibc",
-    "meson",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcvt.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcvt.git' | sed 's@.*/@@' | grep -i libxcvt- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/meson"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libxcvt-0.1.3.tar.xz"
-hash = "qSmZiodn3n36NtbaR1HNvu807WMHFPL0p2ezUfJELgE"
