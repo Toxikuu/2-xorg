@@ -1,16 +1,26 @@
 repo = "xorg"
 name = "libfs"
 version = "1.0.10"
+timestamp = "2025-04-16 17:20:34"
 description = "X Font Service client library"
-timestamp = "2025-03-06 15:59:15"
-dependencies = [
-    "glibc",
-    "xorgproto",
-    "xtrans",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libfs.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libfs.git' | sed 's@.*/@@' | grep -i libfs- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xtrans"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libFS-1.0.10.tar.xz"
-hash = "m6u9PIYGnJhWPaBEBF_cDs5OwMk9zdLGiqdOs0tPO3c"
