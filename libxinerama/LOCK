@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "libxinerama"
 version = "1.1.5"
+timestamp = "2025-04-16 17:23:26"
 description = "X11 Xinerama extension library"
-timestamp = "2025-03-06 16:18:39"
-dependencies = [
-    "libxext",
-    "libx11",
-    "glibc",
-    "xorgproto",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxinerama.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxinerama.git' | sed 's@.*/@@' | grep -i libxinerama- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXinerama-1.1.5.tar.xz"
-hash = "UJTR8PzBgoyxaW0NOdnoZq4yUgxU0B9hjxo8HjDCCFw"
