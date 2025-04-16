@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xrdb"
 version = "1.2.2"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:25"
 description = "X server resource database utility"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xrdb.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xrdb.git' | sed 's@.*/@@' | grep '^xrdb-[0-9]\.' | sort -V | tail -n1'''
