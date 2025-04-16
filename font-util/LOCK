@@ -1,16 +1,22 @@
 repo = "xorg"
 name = "font-util"
 version = "1.4.1"
-description = "X font utilities"
+timestamp = "2025-04-16 17:23:25"
 categories = ["font"]
-timestamp = "2025-03-10 18:25:09"
-dependencies = [
-    "util-macros",
-    "glibc",
-]
+description = "X font utilities"
 upstream = "https://gitlab.freedesktop.org/xorg/font/util.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/font/util.git' | sed 's@.*/@@' | grep 'font-util-[0-9]\.' | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/font/font-util-1.4.1.tar.xz"
-hash = "XJ9kEjwZSxUP7okEmZFoc4bm_zbvKve4C6U--vNozJU"
