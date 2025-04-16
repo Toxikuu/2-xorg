@@ -1,19 +1,41 @@
 repo = "xorg"
 name = "libxtst"
 version = "1.2.5"
+timestamp = "2025-04-16 17:23:26"
 description = "library for XTEST & RECORD extensions"
-timestamp = "2025-03-06 16:19:36"
-dependencies = [
-    "libxext",
-    "libxi",
-    "libx11",
-    "glibc",
-    "xorgproto",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxtst.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxtst.git' | sed 's@.*/@@' | grep -i libxtst- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXtst-1.2.5.tar.xz"
-hash = "tQ1MJblwCadEcGwQOcWY9NjmSRDJ_eOBmU4criNdkkI"
