@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "mkfontscale"
 version = "1.2.3"
+timestamp = "2025-04-16 17:23:26"
 description = "Create an index of scalable font files for X"
-timestamp = "2025-03-06 20:53:28"
-dependencies = [
-    "freetype",
-    "zlib",
-    "libfontenc",
-    "util-macros",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/mkfontscale.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/mkfontscale.git' | sed 's@.*/@@' | grep '^mkfontscale-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "main/freetype"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/zlib"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libfontenc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/mkfontscale-1.2.3.tar.xz"
-hash = "KSHNw0TxrO4EvNbqHilWXBMIJjAG4TSp7jjPnJ1v514"
