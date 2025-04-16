@@ -1,14 +1,20 @@
 repo = "xorg"
 name = "xcb-util-keysyms"
 version = "0.4.1"
+timestamp = "2025-04-16 17:23:26"
 description = "Standard X constants and conversion to/from keycodes"
-timestamp = "2025-03-05 03:37:14"
-dependencies = [
-    "libxcb",
-    "xcb-proto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms.git"
 
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-proto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.1.tar.xz"
-hash = "fCYKUpRBKu1CnfHaL4r9O9B7fLo_7HcvuhWmE6bVxjg"
