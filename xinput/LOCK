@@ -1,20 +1,46 @@
 repo = "xorg"
 name = "xinput"
 version = "1.6.4"
-description = "Small commandline tool to configure devices"
+timestamp = "2025-04-16 17:21:28"
 categories = ["cli"]
-timestamp = "2025-03-06 19:00:14"
-dependencies = [
-    "libx11",
-    "libxi",
-    "libxinerama",
-    "xrandr",
-    "libxfixes",
-    "util-macros",
-    "xorgproto",
-]
+description = "Small commandline tool to configure devices"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xinput.git"
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxi"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxinerama"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xrandr"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxfixes"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xinput-1.6.4.tar.xz"
-hash = "rQTQDWVohNEzEQ7t3DTpxp5ibr67urBNyVeRwpBwV8g"
