@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "libsm"
 version = "1.2.6"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:24"
 description = "X11 Session Management library"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libsm.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libsm.git' | sed 's@.*/@@' | grep -i libsm- | sed 's@_@.@g' | sort -V | tail -n1"
