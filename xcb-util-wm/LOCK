@@ -1,14 +1,20 @@
 repo = "xorg"
 name = "xcb-util-wm"
 version = "0.4.2"
+timestamp = "2025-04-16 17:23:25"
 description = "Client and window-manager helpers for EWMH and ICCCM"
-timestamp = "2025-03-06 16:00:45"
-dependencies = [
-    "libxcb",
-    "xcb-proto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-wm.git"
 
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-proto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://xcb.freedesktop.org/dist/xcb-util-wm-0.4.2.tar.xz"
-hash = "YsNOIdBiZGh_rqftv2NjLJ8E1V5yEUqkpXu5Xk-Iigs"
