@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "libice"
 version = "1.1.2"
+timestamp = "2025-04-16 17:23:26"
 description = "X11 Inter-Client Exchange library"
-timestamp = "2025-03-06 16:17:20"
-dependencies = [
-    "glibc",
-    "xorgproto",
-    "xtrans",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libice.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libice.git' | sed 's@.*/@@' | grep -i libice- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xtrans"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libICE-1.1.2.tar.xz"
-hash = "l05O1BQiXrPHFphd-XCfTajSKmeiiQBmvG38ia0phiU"
