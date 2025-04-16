@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xmodmap"
 version = "1.0.11"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:24"
 description = "Utility for modifying key and button maps"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xmodmap.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xmodmap.git' | sed 's@.*/@@' | grep '^xmodmap-[0-9]\.' | sort -V | tail -n1'''
