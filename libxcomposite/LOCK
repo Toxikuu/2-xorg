@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "libxcomposite"
 version = "0.4.6"
+timestamp = "2025-04-16 17:23:25"
 description = "X11 Composite extension library"
-timestamp = "2025-03-06 16:17:55"
-dependencies = [
-    "libxfixes",
-    "xorgproto",
-    "libx11",
-    "glibc",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git' | sed 's@.*/@@' | grep -i libxcomposite- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxfixes"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXcomposite-0.4.6.tar.xz"
-hash = "_kC88K4aCQcOuiQIil65gQ7-V0U3eeweIKVQgMbcLIc"
