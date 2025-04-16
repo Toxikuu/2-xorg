@@ -1,20 +1,30 @@
 repo = "xorg"
 name = "xf86-input-evdev"
 version = "2.11.0"
-description = "Generic Linux input driver for X"
+timestamp = "2025-04-16 17:23:26"
 categories = [
     "drivers",
     "input",
 ]
-timestamp = "2025-03-08 00:03:07"
-dependencies = [
-    "libevdev",
-    "mtdev",
-    "xorg-server",
-]
+description = "Generic Linux input driver for X"
 upstream = "https://gitlab.freedesktop.org/xorg/driver/xf86-input-evdev.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/driver/xf86-input-evdev.git' | sed 's@.*/@@' | grep 'xf86-input-evdev-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libevdev"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/mtdev"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorg-server"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/driver/xf86-input-evdev-2.11.0.tar.gz"
-hash = "a_HSiPFfXH24forWKnXvNyeJiXvhHYqXBsRAi4Y6Kt0"
