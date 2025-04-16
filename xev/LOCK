@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "xev"
 version = "1.2.6"
+timestamp = "2025-04-16 17:23:25"
 description = "Print contents of X events"
-timestamp = "2025-03-06 20:50:44"
-dependencies = [
-    "libx11",
-    "libxrandr",
-    "util-macros",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xev.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xev.git' | sed 's@.*/@@' | grep '^xev-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxrandr"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xev-1.2.6.tar.xz"
-hash = "YeHF4AismXOsp83d826d90EOdwg7Aw6wT03HN8UYB9c"
