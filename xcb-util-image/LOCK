@@ -1,15 +1,21 @@
 repo = "xorg"
 name = "xcb-util-image"
 version = "0.4.1"
+timestamp = "2025-04-16 17:23:25"
 description = "XCB port of Xlib's XImage and XShmImage"
-timestamp = "2025-03-06 16:00:31"
-dependencies = [
-    "libxcb",
-    "xcb-proto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-image.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcb-image.git' | sed 's@.*/@@' | grep '^xcb-util-image-.\+[0-9]$' | sort -V'''
 
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-proto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://xcb.freedesktop.org/dist/xcb-util-image-0.4.1.tar.xz"
-hash = "zK2O5drbEnH9RyetFNm9d6ZOUFYIdmxOmCZ9mu3kDT0"
