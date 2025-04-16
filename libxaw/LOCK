@@ -1,21 +1,51 @@
 repo = "xorg"
 name = "libxaw"
 version = "1.0.16"
+timestamp = "2025-04-16 17:21:28"
 description = "X11 Athena Widget library"
-timestamp = "2025-03-06 16:17:43"
-dependencies = [
-    "libxmu",
-    "libxpm",
-    "libx11",
-    "libxt",
-    "libxext",
-    "xorgproto",
-    "glibc",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxaw.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxaw.git' | sed 's@.*/@@' | grep -i libxaw- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxmu"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxpm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXaw-1.0.16.tar.xz"
-hash = "cx1XK1THCPgeGXpq-oAWkY4uBt_TAl4GbKZCpbjDnI8"
