@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "libxres"
 version = "1.2.2"
+timestamp = "2025-04-16 17:23:25"
 description = "X11 Resource extension library"
-timestamp = "2025-03-06 16:19:19"
-dependencies = [
-    "libxext",
-    "libx11",
-    "glibc",
-    "xorgproto",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxres.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxres.git' | sed 's@.*/@@' | grep -i libxres- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXres-1.2.2.tar.xz"
-hash = "mnRG80hLm3U4rF7jDSwc6eW3-7rxRA4C9syhhqH6dF8"
