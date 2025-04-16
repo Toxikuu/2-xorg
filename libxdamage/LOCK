@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "libxdamage"
 version = "1.1.6"
+timestamp = "2025-04-16 17:23:25"
 description = "X11 damaged region extension library"
-timestamp = "2025-03-06 15:58:22"
-dependencies = [
-    "libxfixes",
-    "xorgproto",
-    "libx11",
-    "glibc",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxdamage.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxdamage.git' | sed 's@.*/@@' | grep -i libxdamage- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxfixes"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXdamage-1.1.6.tar.xz"
-hash = "UnM8H1Ji_KNfZOfVBgxvzYGogLqOHmXJYhzwcnr7XRE"
