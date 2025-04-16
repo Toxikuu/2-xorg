@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xlsclients"
 version = "1.1.5"
-timestamp = "2025-04-16 17:21:56"
+timestamp = "2025-04-16 17:23:25"
 description = "List client applications running on a display"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xlsclients.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xlsclients.git' | sed 's@.*/@@' | grep '^xlsclients-' | sort -V | tail -n1"
