@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xrandr"
 version = "1.5.3"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:24"
 description = "RandR CLI"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xrandr.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xrandr.git' | sed 's@.*/@@' | grep '^xrandr-[0-9]\.' | sort -V | tail -n1'''
