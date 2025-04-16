@@ -1,13 +1,19 @@
 repo = "xorg"
 name = "luit"
 version = "20240910"
+timestamp = "2025-04-16 17:22:54"
 description = "Filter that can be run between an arbitrary application and a UTF-8 terminal emulator"
-timestamp = "2025-03-06 16:01:36"
-dependencies = [
-    "libfontenc",
-    "libx11",
-]
+
+[[dependencies]]
+relpath = "xorg/libfontenc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
 
 [source]
+kind = "Tarball"
 url = "https://invisible-mirror.net/archives/luit/luit-20240910.tgz"
-hash = "oV1_y_wlrhRT1hrsI_9roEFF1ue3s7AHHrXP2jo6SdU"
