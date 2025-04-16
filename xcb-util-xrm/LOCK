@@ -1,15 +1,25 @@
 repo = "xorg"
 name = "xcb-util-xrm"
 version = "1.3"
+timestamp = "2025-04-16 17:23:25"
 description = "XCB utility functions for the X Resource Manager"
-timestamp = "2025-03-16 13:44:11"
-dependencies = [
-    "util-macros",
-    "xcb-util",
-    "libx11",
-]
 upstream = "https://github.com/Airblader/xcb-util-xrm.git"
 
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-util"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://github.com/Airblader/xcb-util-xrm/releases/download/v1.3/xcb-util-xrm-1.3.tar.bz2"
-hash = "MBzzNwEgfqh4LUn0y2QEq9jy1k4W8kIBf9cgvnyQDIU"
