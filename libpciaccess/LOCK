@@ -1,11 +1,11 @@
 repo = "xorg"
 name = "libpciaccess"
 version = "0.18.1"
+timestamp = "2025-04-16 17:23:25"
 description = "X11 PCI access library"
-timestamp = "2025-03-06 16:17:32"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libpciaccess.git' | sed 's@.*/@@' | grep -i libpciaccess- | sed 's@_@.@g' | sort -V | tail -n1"
 
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libpciaccess-0.18.1.tar.xz"
-hash = "SvQ0RLOK21VF0O0cLORtlgjMR7McI4f8UYFlZ2Wm-nY"
