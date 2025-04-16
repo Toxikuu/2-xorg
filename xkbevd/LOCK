@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xkbevd"
 version = "1.1.6"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:24"
 description = "XKB event daemon"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xkbevd.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbevd.git' | sed 's@.*/@@' | grep '^xkbevd-[0-9]\.' | sort -V | tail -n1'''
