@@ -1,19 +1,41 @@
 repo = "xorg"
 name = "libxfont2"
 version = "2.0.7"
+timestamp = "2025-04-16 17:21:28"
 description = "X11 font rasterisation library"
-timestamp = "2025-03-06 16:18:24"
-dependencies = [
-    "freetype2",
-    "libfontenc",
-    "xorgproto",
-    "glibc",
-    "xtrans",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxfont.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxfont.git' | sed 's@.*/@@' | grep -i libxfont2- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "main/freetype"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libfontenc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xtrans"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXfont2-2.0.7.tar.xz"
-hash = "i3uC_eukh2m2lDPo4_u5hKX2vzaLDV9Hq-7EnePljvs"
