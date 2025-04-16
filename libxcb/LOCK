@@ -1,16 +1,26 @@
 repo = "xorg"
 name = "libxcb"
 version = "1.17.0"
+timestamp = "2025-04-16 17:23:25"
 description = "X11 client-side library"
-timestamp = "2025-02-20 20:24:43"
-dependencies = [
-    "libxau",
-    "xcb-proto",
-    "libxdmcp",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxcb.git' | sed 's@.*/@@' | grep 'libxcb-[0-9]' | cut -d- -f2 | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxau"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-proto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxdmcp"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.17.0.tar.xz"
-hash = "WZ6_mZZxD-pxYi5uGE86itW0PQ5fqMTkBxI8iKWabVU"
