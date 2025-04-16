@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "setxkbmap"
 version = "1.3.4"
-timestamp = "2025-04-16 17:22:40"
+timestamp = "2025-04-16 17:23:25"
 description = "Set the keyboard using the X Keyboard Extension"
 upstream = "https://gitlab.freedesktop.org/xorg/app/setxkbmap.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/setxkbmap.git' | sed 's@.*/@@' | grep '^setxkbmap-[0-9]\.' | sort -V | tail -n1'''
