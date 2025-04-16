@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xwininfo"
 version = "1.1.6"
-timestamp = "2025-04-16 17:23:08"
+timestamp = "2025-04-16 17:23:25"
 categories = ["cli"]
 description = "Displays X window information"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xwininfo.git"
