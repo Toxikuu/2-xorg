@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xcb-util-errors"
 version = "1.0.1"
-timestamp = "2025-04-16 17:23:00"
+timestamp = "2025-04-16 17:23:25"
 description = "XCB errors library"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git"
 
