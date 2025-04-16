@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xcmsdb"
 version = "1.0.7"
-timestamp = "2025-04-16 17:22:30"
+timestamp = "2025-04-16 17:23:25"
 description = "Device Color Characterization utility for X Color Management System"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xcmsdb.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xcmsdb.git' | sed 's@.*/@@' | grep '^xcmsdb-[0-9]\.' | sort -V | tail -n1'''
