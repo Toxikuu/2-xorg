@@ -1,12 +1,16 @@
 repo = "xorg"
 name = "libxau"
 version = "1.0.12"
+timestamp = "2025-04-16 17:22:24"
 description = "The X Authorization Protocol"
-timestamp = "2025-03-21 18:36:10"
-dependencies = ["xorgproto"]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxau.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxau.git' | sed 's@.*/@@' | grep -E '^libXau-[0-9]+\.' | cut -d- -f2 | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXau-1.0.12.tar.xz"
-hash = "dNDk36PTmtiTnpm9o39ZZ6ulKCEQdoKEZNJ3fUd_wPs"
