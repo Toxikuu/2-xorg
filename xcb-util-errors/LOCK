@@ -1,14 +1,20 @@
 repo = "xorg"
 name = "xcb-util-errors"
 version = "1.0.1"
+timestamp = "2025-04-16 17:23:00"
 description = "XCB errors library"
-timestamp = "2025-03-06 16:00:28"
-dependencies = [
-    "libxcb",
-    "xcb-proto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git"
 
+[[dependencies]]
+relpath = "xorg/libxcb"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xcb-proto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://xcb.freedesktop.org/dist/xcb-util-errors-1.0.1.tar.xz"
-hash = "VijIe5hCWa2Se6zYpClYMZw2vfSwZYh4A8nYIPuA81c"
