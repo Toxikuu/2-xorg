@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "libfs"
 version = "1.0.10"
-timestamp = "2025-04-16 17:20:34"
+timestamp = "2025-04-16 17:20:58"
 description = "X Font Service client library"
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libfs.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libfs.git' | sed 's@.*/@@' | grep -i libfs- | sed 's@_@.@g' | sort -V | tail -n1"
