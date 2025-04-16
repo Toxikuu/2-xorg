@@ -1,24 +1,62 @@
 repo = "xorg"
 name = "xorg-server"
 version = "21.1.16"
-description = "X Window System display server"
+timestamp = "2025-04-16 17:23:26"
 categories = ["graphics"]
-timestamp = "2025-03-21 22:36:39"
-dependencies = [
-    "libxcvt",
-    "pixman",
-    "font-util",
-    "dbus",
-    "elogind",
-    "libepoxy",
-    "r^libinput",
-    "r^xkeyboard-config",
-    "o^libunwind",
-    "o^nettle",
-]
+description = "X Window System display server"
 upstream = "https://gitlab.freedesktop.org/xorg/xserver.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/xserver.git' | sed 's@.*/@@' | grep 'xorg-server-' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxcvt"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/pixman"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/font-util"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/dbus"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/elogind"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/libepoxy"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libinput"
+optional = false
+runtime = true
+
+[[dependencies]]
+relpath = "xorg/xkeyboard-config"
+optional = false
+runtime = true
+
+[[dependencies]]
+relpath = "main/libunwind"
+optional = true
+runtime = false
+
+[[dependencies]]
+relpath = "main/nettle"
+optional = true
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/xserver/xorg-server-21.1.16.tar.xz"
-hash = "sUoRbS2AXevFtbKqxQWieeabIX2uL64t_LYkAEcamXA"
