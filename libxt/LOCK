@@ -1,19 +1,41 @@
 repo = "xorg"
 name = "libxt"
 version = "1.3.1"
+timestamp = "2025-04-16 17:23:26"
 description = "X11 toolkit intrinsics library"
-timestamp = "2025-03-06 16:19:32"
-dependencies = [
-    "libsm",
-    "libx11",
-    "libice",
-    "glibc",
-    "xorgproto",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxt.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxt.git' | sed 's@.*/@@' | grep -i libxt- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libsm"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libice"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXt-1.3.1.tar.xz"
-hash = "4Kd0szMk9NTAWxmepFBQ-HIGWG2BZV-L7026Q02TEog"
