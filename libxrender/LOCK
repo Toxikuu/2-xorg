@@ -1,16 +1,26 @@
 repo = "xorg"
 name = "libxrender"
 version = "0.9.12"
+timestamp = "2025-04-16 17:23:26"
 description = "X Rendering Extension client library"
-timestamp = "2025-03-06 16:19:15"
-dependencies = [
-    "libx11",
-    "glibc",
-    "xorgproto",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxrender.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxrender.git' | sed 's@.*/@@' | grep -i libxrender- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXrender-0.9.12.tar.xz"
-hash = "uDISjaSLOcjWCCJEgXQ0A60Wkb9OVU5L6cF03xcdG5c"
