@@ -1,17 +1,31 @@
 repo = "xorg"
 name = "libxxf86dga"
 version = "1.1.6"
+timestamp = "2025-04-16 17:20:34"
 description = "X11 Direct Graphics Access extension library"
-timestamp = "2025-03-06 16:19:50"
-dependencies = [
-    "xorgproto",
-    "libxext",
-    "libx11",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxxf86dga.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxxf86dga.git' | sed 's@.*/@@' | grep -i libxxf86dga- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXxf86dga-1.1.6.tar.xz"
-hash = "vkRCdXmAj-OiF9WfUcrnVqJpE-tuTIc4zKtl_1bXmA8"
