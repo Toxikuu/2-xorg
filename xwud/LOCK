@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xwud"
 version = "1.0.7"
-timestamp = "2025-04-16 17:20:58"
+timestamp = "2025-04-16 17:21:27"
 description = "X Window System image undumping utility"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xwud.git"
 
