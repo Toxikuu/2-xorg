@@ -1,7 +1,7 @@
 repo = "xorg"
 name = "xauth"
 version = "1.1.4"
-timestamp = "2025-04-16 17:21:28"
+timestamp = "2025-04-16 17:23:24"
 description = "X authorization settings program"
 upstream = "https://gitlab.freedesktop.org/xorg/app/xauth.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xauth.git' | sed 's@.*/@@' | grep '^xauth-[0-9]\.' | sort -V | tail -n1'''
