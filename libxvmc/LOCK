@@ -1,18 +1,36 @@
 repo = "xorg"
 name = "libxvmc"
 version = "1.0.14"
+timestamp = "2025-04-16 17:22:35"
 description = "X11 Video Motion Compensation extension library"
-timestamp = "2025-03-06 16:19:43"
-dependencies = [
-    "libxext",
-    "libxv",
-    "libx11",
-    "xorgproto",
-    "glibc",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/lib/libxvmc.git"
 version_command = "git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/lib/libxvmc.git' | sed 's@.*/@@' | grep -i libxvmc- | sed 's@_@.@g' | sort -V | tail -n1"
 
+[[dependencies]]
+relpath = "xorg/libxext"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxv"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xorgproto"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/glibc"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/lib/libXvMC-1.0.14.tar.xz"
-hash = "5L6etra6_bv4H0f3FjBHIVN25F4tx4bQ6mGByTByXtk"
