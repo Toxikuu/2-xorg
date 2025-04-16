@@ -1,15 +1,25 @@
 repo = "xorg"
 name = "xkeyboard-config"
 version = "2.44"
+timestamp = "2025-04-16 17:23:25"
 description = "X keyboard configuration database"
-timestamp = "2025-03-07 18:11:14"
-dependencies = [
-    "meson",
-    "python",
-    "xkbcomp",
-]
 upstream = "https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config.git"
 
+[[dependencies]]
+relpath = "main/meson"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "main/python"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/xkbcomp"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/data/xkeyboard-config/xkeyboard-config-2.44.tar.xz"
-hash = "VNLDPu67Ax1I-lkMVD5Uyby9DwA4brxkibL0eg2kNCo"
