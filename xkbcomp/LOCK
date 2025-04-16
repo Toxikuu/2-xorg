@@ -1,16 +1,26 @@
 repo = "xorg"
 name = "xkbcomp"
 version = "1.4.7"
+timestamp = "2025-04-16 17:23:25"
 description = "X Keyboard description compiler"
-timestamp = "2025-03-06 20:50:41"
-dependencies = [
-    "libx11",
-    "libxkbfile",
-    "util-macros",
-]
 upstream = "https://gitlab.freedesktop.org/xorg/app/xkbcomp.git"
 version_command = '''git ls-remote --tags --refs 'https://gitlab.freedesktop.org/xorg/app/xkbcomp.git' | sed 's@.*/@@' | grep '^xkbcomp-[0-9]\.' | sort -V | tail -n1'''
 
+[[dependencies]]
+relpath = "xorg/libx11"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/libxkbfile"
+optional = false
+runtime = false
+
+[[dependencies]]
+relpath = "xorg/util-macros"
+optional = false
+runtime = false
+
 [source]
+kind = "Tarball"
 url = "https://www.x.org/pub/individual/app/xkbcomp-1.4.7.tar.xz"
-hash = "CiiBFOX0TjGYcELHmuz_H_rVOoFUuOyXHCSmmoD4H3c"
